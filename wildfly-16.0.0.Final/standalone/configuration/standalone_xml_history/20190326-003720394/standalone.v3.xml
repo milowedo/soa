@@ -515,12 +515,4 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <deployments>
-        <deployment name="lab3_war_exploded" runtime-name="lab3_war_exploded.war">
-            <fs-exploded path="C:\wildfly-soa\lab3\out\artifacts\lab3_war_exploded"/>
-        </deployment>
-        <deployment name="books_war_exploded.war" runtime-name="books_war_exploded.war">
-            <fs-exploded path="C:\wildfly-soa\books\out\artifacts\books_war_exploded.war"/>
-        </deployment>
-    </deployments>
 </server>

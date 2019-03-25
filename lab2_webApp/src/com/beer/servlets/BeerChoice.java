@@ -1,4 +1,6 @@
-package com.beer;
+package com.beer.servlets;
+
+import com.beer.model.BeerExpert;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +16,7 @@ public class BeerChoice extends HttpServlet {
             throws IOException {
 
         String type = request.getParameter("colour");
+        if(type == null) return;
         BeerExpert.setBeerBrand(type);
         response.sendRedirect("beer_result.jsp");
     }

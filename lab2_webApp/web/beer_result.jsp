@@ -1,4 +1,4 @@
-<%@ page import="com.beer.BeerExpert" %><%--
+<%@ page import="com.beer.model.BeerExpert" %><%--
   Created by IntelliJ IDEA.
   User: Millosz
   Date: 19.03.2019

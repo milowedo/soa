@@ -1,4 +1,4 @@
-package com.beer;
+package com.beer.model;
 
 public final class BeerExpert {
     private static String beerBrand;

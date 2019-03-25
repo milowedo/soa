@@ -32,11 +32,20 @@
 
     <servlet>
         <servlet-name>beerChoice</servlet-name>
-        <servlet-class>com.beer.BeerChoice</servlet-class>
+        <servlet-class>com.beer.servlets.BeerChoice</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>beerChoice</servlet-name>
         <url-pattern>/beerChoice</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>verifyAge</servlet-name>
+        <servlet-class>com.beer.servlets.VerifyAge</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verifyAge</servlet-name>
+        <url-pattern>/verifyAge</url-pattern>
     </servlet-mapping>
 
 </web-app>
