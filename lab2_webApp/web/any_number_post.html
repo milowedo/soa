@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+<body>
+
+<form id="form" action="anyNumberPost" method="post">
+    <input type="submit" value="Wyslij"/>
+    <button type="button" onclick="
+        jQuery('#form')
+        .append('<input type=&quottext&quot name=&quotname&quot><br><br>')">dodaj</button><br>
+    <input type="text" name="imie"/><br><br>
+    <input type="text" name="wiek" /><br><br>
+    <input type="text" name="noga"/><br>
+</form>
+
+<br>
+<a href="index.jsp">Back to index</a>
+
+</body>
+</html>

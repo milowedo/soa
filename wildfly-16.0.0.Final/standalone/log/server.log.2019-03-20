@@ -1,0 +1,1450 @@
+2019-03-20 00:02:35,562 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 2) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2019-03-20 00:02:35,676 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment lab2_webApp_war_exploded (runtime-name: lab2_webApp_war_exploded.war) in 119ms
+2019-03-20 00:02:35,756 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "lab2_webApp_war_exploded" (runtime-name: "lab2_webApp_war_exploded.war")
+2019-03-20 00:03:22,667 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 00:03:24,902 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 00:03:24,932 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 00:03:25,604 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 00:03:25,608 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 00:03:25,616 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:57809,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 00:03:29,616 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 00:03:32,020 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 00:03:32,186 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 15) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 00:03:32,412 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 00:03:32,488 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.6.5.Final
+2019-03-20 00:03:32,552 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 00:03:32,802 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 00:03:32,815 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 00:03:32,835 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 00:03:32,873 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 00:03:32,894 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 00:03:32,898 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 00:03:32,902 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 00:03:32,798 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 00:03:32,930 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 00:03:32,958 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 00:03:33,002 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 00:03:33,042 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 00:03:33,052 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 00:03:33,188 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 00:03:33,238 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 00:03:33,284 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 00:03:33,310 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 00:03:33,331 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 00:03:33,368 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2019-03-20 00:03:33,642 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 00:03:33,724 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2019-03-20 00:03:33,732 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [2] config entries and added [4] replacements
+2019-03-20 00:03:33,768 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 00:03:34,268 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 00:03:35,346 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 00:03:35,342 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 00:03:36,252 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2019-03-20 00:03:36,334 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-03-20 00:03:36,346 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [3] config entries and added [18] replacements
+2019-03-20 00:03:36,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 00:03:36,633 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 00:03:36,790 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 00:03:36,870 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 00:03:37,056 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 00:03:37,398 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 00:03:37,434 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 00:03:37,894 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 00:03:38,890 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 00:03:38,898 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 00:03:38,898 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 00:03:38,898 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 17568ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 00:03:41,942 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "lab2_webApp_war_exploded" (runtime-name: "lab2_webApp_war_exploded.war")
+2019-03-20 00:03:44,516 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 00:03:45,954 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 74) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 00:03:46,311 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 37) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2019-03-20 00:03:46,443 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab2_webApp_war_exploded" (runtime-name : "lab2_webApp_war_exploded.war")
+2019-03-20 00:07:29,429 INFO  [stdout] (default task-2) dark
+2019-03-20 00:09:19,247 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 15) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2019-03-20 00:09:40,883 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 00:09:42,334 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 00:09:42,364 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 00:09:42,837 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 00:09:42,842 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 00:09:42,845 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:57809,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 00:09:46,127 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 00:09:49,435 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 00:09:49,509 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 23) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 00:09:49,873 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 00:09:49,947 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.6.5.Final
+2019-03-20 00:09:49,982 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 00:09:50,348 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 00:09:50,425 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 00:09:50,509 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 00:09:50,516 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 00:09:50,326 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 00:09:50,589 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 00:09:50,593 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 00:09:50,585 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 00:09:50,396 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 00:09:50,603 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 00:09:50,627 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 00:09:50,631 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 00:09:50,639 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 00:09:50,647 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 00:09:50,669 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 00:09:50,866 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [2] config entries and added [4] replacements
+2019-03-20 00:09:50,910 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 00:09:50,983 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2019-03-20 00:09:51,144 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [3] config entries and added [18] replacements
+2019-03-20 00:09:51,188 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 00:09:51,188 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 00:09:51,220 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-03-20 00:09:51,300 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 00:09:51,660 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 00:09:52,431 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 00:09:52,408 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 00:09:52,435 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 00:09:52,666 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-03-20 00:09:52,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-03-20 00:09:53,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 00:09:54,173 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 00:09:54,392 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 00:09:54,441 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 00:09:54,519 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 00:09:54,523 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 00:09:55,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 00:09:55,775 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 00:09:56,634 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 00:09:56,639 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 00:09:56,639 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 00:09:56,639 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 16637ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 00:10:00,934 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "lab2_webApp_war_exploded" (runtime-name: "lab2_webApp_war_exploded.war")
+2019-03-20 00:10:03,576 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 00:10:04,632 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 20) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 00:10:04,983 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 6) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2019-03-20 00:10:05,075 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab2_webApp_war_exploded" (runtime-name : "lab2_webApp_war_exploded.war")
+2019-03-20 00:10:57,390 INFO  [stdout] (default task-1) dark
+2019-03-20 00:11:00,603 INFO  [stdout] (default task-1) pale
+2019-03-20 00:11:03,566 INFO  [stdout] (default task-1) other
+2019-03-20 00:22:59,126 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 6) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2019-03-20 00:22:59,183 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment lab2_webApp_war_exploded (runtime-name: lab2_webApp_war_exploded.war) in 69ms
+2019-03-20 00:22:59,246 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "lab2_webApp_war_exploded" (runtime-name: "lab2_webApp_war_exploded.war")
+2019-03-20 00:22:59,423 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0272: Suspending server
+2019-03-20 00:22:59,457 INFO  [org.jboss.as.ejb3] (management-handler-thread - 3) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 00:22:59,486 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-03-20 00:22:59,603 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 00:22:59,625 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 00:22:59,684 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-03-20 00:22:59,725 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2019-03-20 00:22:59,728 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-03-20 00:22:59,793 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-03-20 00:22:59,796 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-03-20 00:22:59,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2019-03-20 00:22:59,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-03-20 00:22:59,831 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.0.19.Final stopping
+2019-03-20 00:23:00,005 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) stopped in 497ms
+2019-03-20 13:22:32,245 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 13:22:33,976 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 13:22:34,007 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 13:22:34,514 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 13:22:34,514 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 13:22:34,530 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52062,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 13:22:37,804 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 13:22:39,964 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:22:40,058 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:22:40,339 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 13:22:40,402 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.6.5.Final
+2019-03-20 13:22:40,444 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 13:22:40,660 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 13:22:40,688 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 13:22:40,696 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 13:22:40,768 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 13:22:40,772 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 13:22:40,868 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 13:22:40,832 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 13:22:40,928 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 13:22:41,016 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 13:22:41,040 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 13:22:41,084 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 13:22:41,064 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 13:22:41,056 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 13:22:41,116 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 13:22:41,216 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2019-03-20 13:22:41,424 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 13:22:41,432 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 13:22:41,584 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 13:22:41,608 INFO  [io.smallrye.metrics] (MSC service thread 1-2) Converted [2] config entries and added [4] replacements
+2019-03-20 13:22:41,616 INFO  [io.smallrye.metrics] (MSC service thread 1-2) Converted [3] config entries and added [18] replacements
+2019-03-20 13:22:41,628 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-03-20 13:22:42,364 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 13:22:42,356 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 13:22:42,428 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:22:43,128 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 13:22:43,468 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 13:22:43,471 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 13:22:43,627 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2019-03-20 13:22:43,643 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-03-20 13:22:44,011 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 13:22:44,371 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:22:44,851 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:22:45,029 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 13:22:45,091 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 13:22:45,107 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 13:22:45,849 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 13:22:46,255 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 13:22:46,677 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 13:22:46,692 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 13:22:46,692 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 13:22:46,708 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 15463ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 13:22:48,686 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "lab3_war_exploded" (runtime-name: "lab3_war_exploded.war")
+2019-03-20 13:22:50,943 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 13:22:51,853 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 3) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 13:22:52,226 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 9) Initializing Mojarra 2.3.9.SP01 for context '/lab3_war_exploded'
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.InitFacesContext.getApplication(InitFacesContext.java:109)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.ClientWindowFactoryImpl.<init>(ClientWindowFactoryImpl.java:39)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Class.newInstance(Class.java:584)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getImplGivenPreviousImpl(FactoryFinderInstance.java:458)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getImplementationInstance(FactoryFinderInstance.java:348)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getFactory(FactoryFinderInstance.java:200)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinder.getFactory(FactoryFinder.java:279)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.lambda$verifyFactoriesExist$0(FactoryConfigProcessor.java:303)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.verifyFactoriesExist(FactoryConfigProcessor.java:297)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.process(FactoryConfigProcessor.java:211)
+2019-03-20 13:22:52,616 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$0(ConfigManager.java:294)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:292)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,632 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,636 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,640 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,644 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,644 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.InitFacesContext.getApplication(InitFacesContext.java:109)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.LifecycleImpl.<init>(LifecycleImpl.java:89)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.LifecycleFactoryImpl.<init>(LifecycleFactoryImpl.java:59)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Class.newInstance(Class.java:584)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getImplGivenPreviousImpl(FactoryFinderInstance.java:458)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getImplementationInstance(FactoryFinderInstance.java:348)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getFactory(FactoryFinderInstance.java:200)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinder.getFactory(FactoryFinder.java:279)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.lambda$verifyFactoriesExist$0(FactoryConfigProcessor.java:303)
+2019-03-20 13:22:52,685 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.verifyFactoriesExist(FactoryConfigProcessor.java:297)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FactoryConfigProcessor.process(FactoryConfigProcessor.java:211)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$0(ConfigManager.java:294)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:292)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,701 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,716 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,764 SEVERE [javax.faces] (ServerService Thread Pool -- 9) Application was not properly initialized at startup, could not find Factory: javax.faces.lifecycle.LifecycleFactory. Attempting to find backup.
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) java.lang.IllegalStateException: Could not find backup for factory javax.faces.lifecycle.LifecycleFactory. 
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.notNullFactory(FactoryFinderInstance.java:524)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinderInstance.getFactory(FactoryFinderInstance.java:207)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at javax.faces.api@2.3.9.SP01//javax.faces.FactoryFinder.getFactory(FactoryFinder.java:279)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.LifecycleConfigProcessor.process(LifecycleConfigProcessor.java:80)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$0(ConfigManager.java:294)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:292)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,768 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,772 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,776 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,780 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,780 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,780 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,780 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ApplicationConfigProcessor.process(ApplicationConfigProcessor.java:242)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$0(ConfigManager.java:294)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:292)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,792 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,808 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ComponentConfigProcessor.addComponents(ComponentConfigProcessor.java:106)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ComponentConfigProcessor.process(ComponentConfigProcessor.java:96)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$1(ConfigManager.java:324)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:307)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,823 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,839 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,854 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,854 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,854 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,854 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,854 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ConverterConfigProcessor.addConverters(ConverterConfigProcessor.java:103)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ConverterConfigProcessor.process(ConverterConfigProcessor.java:93)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$1(ConfigManager.java:324)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:307)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,901 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,917 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ValidatorConfigProcessor.addValidators(ValidatorConfigProcessor.java:129)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.ValidatorConfigProcessor.process(ValidatorConfigProcessor.java:97)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$1(ConfigManager.java:324)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:307)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:52,964 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:52,979 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.NavigationConfigProcessor.process(NavigationConfigProcessor.java:184)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$1(ConfigManager.java:324)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:307)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:53,120 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:53,151 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) javax.faces.FacesException: Unable to find CDI BeanManager
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.Version.isJsf23(Version.java:62)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.applicationimpl.ExpressionLanguage.addELResolver(ExpressionLanguage.java:136)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationImpl.addELResolver(ApplicationImpl.java:221)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplication.<init>(WeldApplication.java:60)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.as.jsf-injection//org.jboss.as.jsf.injection.weld.WeldApplicationFactory.getApplication(WeldApplicationFactory.java:52)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.InjectionApplicationFactory.getApplication(InjectionApplicationFactory.java:61)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.AbstractConfigProcessor.getApplication(AbstractConfigProcessor.java:113)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.BehaviorConfigProcessor.addBehaviors(BehaviorConfigProcessor.java:102)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.BehaviorConfigProcessor.process(BehaviorConfigProcessor.java:92)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.lambda$initialize$1(ConfigManager.java:324)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:307)
+2019-03-20 13:22:53,183 ERROR [stderr] (ServerService Thread Pool -- 9) 	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+2019-03-20 13:22:53,198 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+2019-03-20 13:22:53,214 ERROR [stderr] (ServerService Thread Pool -- 9) 	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-03-20 13:22:53,214 ERROR [stderr] (ServerService Thread Pool -- 9) 	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+2019-03-20 13:22:53,276 SEVERE [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 9) Critical error during deployment: : com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:357)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.NullPointerException
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.impl.DefaultResourceResolver.resolveUrl(DefaultResourceResolver.java:40)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.impl.DefaultFaceletFactory.init(DefaultFaceletFactory.java:129)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.createFaceletFactory(ApplicationAssociate.java:849)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.initializeFacelets(ApplicationAssociate.java:342)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.getCompiler(ApplicationAssociate.java:420)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FaceletTaglibConfigProcessor.process(FaceletTaglibConfigProcessor.java:217)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:341)
+	... 23 more
+
+2019-03-20 13:22:53,308 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 9) MSC000001: Failed to start service jboss.deployment.unit."lab3_war_exploded.war".undertow-deployment: org.jboss.msc.service.StartException in service jboss.deployment.unit."lab3_war_exploded.war".undertow-deployment: java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	... 9 more
+Caused by: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:283)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:216)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:185)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:250)
+	... 11 more
+Caused by: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:357)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigureListener.contextInitialized(ConfigureListener.java:205)
+	... 22 more
+Caused by: java.lang.NullPointerException
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.impl.DefaultResourceResolver.resolveUrl(DefaultResourceResolver.java:40)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.impl.DefaultFaceletFactory.init(DefaultFaceletFactory.java:129)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.createFaceletFactory(ApplicationAssociate.java:849)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.initializeFacelets(ApplicationAssociate.java:342)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ApplicationAssociate.getCompiler(ApplicationAssociate.java:420)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.processor.FaceletTaglibConfigProcessor.process(FaceletTaglibConfigProcessor.java:217)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.config.ConfigManager.initialize(ConfigManager.java:341)
+	... 23 more
+
+2019-03-20 13:22:53,323 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "lab3_war_exploded")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"lab3_war_exploded.war\".undertow-deployment" => "java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.NullPointerException"}}
+2019-03-20 13:22:53,323 ERROR [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0021: Deploy of deployment "lab3_war_exploded.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"lab3_war_exploded.war\".undertow-deployment" => "java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.RuntimeException: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.RuntimeException: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: com.sun.faces.config.ConfigurationException: CONFIGURATION FAILED! null
+    Caused by: java.lang.NullPointerException"}}
+2019-03-20 13:22:53,589 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment lab3_war_exploded (runtime-name: lab3_war_exploded.war) in 267ms
+2019-03-20 13:23:14,281 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2019-03-20 13:23:14,296 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:23:14,327 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-03-20 13:23:31,273 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 13:23:32,369 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 13:23:32,385 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 13:23:32,720 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 13:23:32,720 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 13:23:32,736 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 13:23:35,380 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 13:23:37,028 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:23:37,091 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 23) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:23:37,278 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 13:23:37,325 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-03-20 13:23:37,434 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 13:23:37,637 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 13:23:37,700 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 13:23:37,778 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 13:23:37,794 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 13:23:37,825 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 13:23:37,919 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 13:23:37,934 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 13:23:37,981 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 13:23:38,122 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 13:23:37,856 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 13:23:38,200 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 13:23:38,247 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 13:23:38,340 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 13:23:38,434 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-03-20 13:23:38,484 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 13:23:38,294 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 13:23:38,584 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 13:23:38,737 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [2] config entries and added [4] replacements
+2019-03-20 13:23:38,737 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [3] config entries and added [18] replacements
+2019-03-20 13:23:38,878 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 13:23:38,909 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 13:23:39,144 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 13:23:39,175 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:23:40,535 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 13:23:40,551 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 13:23:40,551 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 13:23:40,676 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 13:23:40,692 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2019-03-20 13:23:40,692 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-03-20 13:23:40,711 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-03-20 13:23:40,892 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 13:23:40,908 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 13:23:40,954 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 13:23:41,376 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 13:23:41,454 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:23:41,829 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:23:41,829 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 13:23:42,595 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 13:23:42,611 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 13:23:42,611 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 13:23:42,611 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 12048ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 13:23:45,221 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "lab3_war_exploded" (runtime-name: "lab3_war_exploded.war")
+2019-03-20 13:23:47,446 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment lab3_war_exploded.war
+2019-03-20 13:23:47,860 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 6.0.15.Final
+2019-03-20 13:23:48,871 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 13:23:48,975 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.0 (Final)
+2019-03-20 13:23:50,022 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 13:23:50,154 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-03-20 13:23:50,154 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2019-03-20 13:23:51,632 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 31) Initializing Mojarra 2.3.9.SP01 for context '/lab3_war_exploded'
+2019-03-20 13:23:53,046 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0021: Registered web context: '/lab3_war_exploded' for server 'default-server'
+2019-03-20 13:23:53,124 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3_war_exploded" (runtime-name : "lab3_war_exploded.war")
+2019-03-20 13:45:29,933 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 31) WFLYUT0022: Unregistered web context: '/lab3_war_exploded' from server 'default-server'
+2019-03-20 13:45:30,093 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment lab3_war_exploded (runtime-name: lab3_war_exploded.war) in 175ms
+2019-03-20 13:45:30,280 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0009: Undeployed "lab3_war_exploded" (runtime-name: "lab3_war_exploded.war")
+2019-03-20 13:45:30,452 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0272: Suspending server
+2019-03-20 13:45:30,452 INFO  [org.jboss.as.ejb3] (management-handler-thread - 4) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:45:30,468 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-03-20 13:45:30,530 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 13:45:30,530 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:45:30,546 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2019-03-20 13:45:30,546 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-03-20 13:45:30,546 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2019-03-20 13:45:30,546 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-03-20 13:45:30,577 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 108) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2019-03-20 13:45:30,593 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2019-03-20 13:45:30,593 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2019-03-20 13:45:30,624 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.0.19.Final stopping
+2019-03-20 13:45:30,671 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) stopped in 189ms
+2019-03-20 13:45:48,221 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 13:45:49,560 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 13:45:49,575 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 13:45:50,018 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 13:45:50,018 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 13:45:50,034 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52062,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 13:45:53,062 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 13:45:55,078 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:45:55,203 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 24) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:45:55,391 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 13:45:55,438 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-03-20 13:45:55,485 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 13:45:55,656 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 13:45:55,746 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.8.Final
+2019-03-20 13:45:55,790 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 13:45:55,814 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 13:45:55,730 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 13:45:55,794 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 13:45:55,834 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 13:45:55,922 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 13:45:56,002 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 13:45:56,022 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 13:45:55,902 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 13:45:56,034 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 13:45:56,078 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 13:45:56,086 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 13:45:56,118 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 13:45:56,190 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 13:45:56,922 INFO  [io.smallrye.metrics] (MSC service thread 1-3) Converted [2] config entries and added [4] replacements
+2019-03-20 13:45:56,926 INFO  [io.smallrye.metrics] (MSC service thread 1-3) Converted [3] config entries and added [18] replacements
+2019-03-20 13:45:56,974 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 13:45:56,902 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-03-20 13:45:57,326 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 13:45:57,334 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 13:45:57,562 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:45:57,610 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 13:45:57,670 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 13:45:57,754 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 13:45:57,982 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 13:45:58,094 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2019-03-20 13:45:58,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2019-03-20 13:45:59,029 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 13:45:59,329 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 13:45:59,329 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:45:59,493 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 13:45:59,569 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 13:45:59,937 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 13:45:59,945 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:46:00,473 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 13:46:02,161 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 13:46:02,169 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 13:46:02,169 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 13:46:02,173 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 14831ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 13:46:04,752 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "lab3_war_exploded" (runtime-name: "lab3_war_exploded.war")
+2019-03-20 13:46:09,016 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment lab3_war_exploded.war
+2019-03-20 13:46:09,782 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.15.Final
+2019-03-20 13:46:10,979 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 13:46:11,073 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 3.1.0 (Final)
+2019-03-20 13:46:12,356 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 7) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 13:46:12,371 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-03-20 13:46:12,371 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2019-03-20 13:46:16,083 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 7) Initializing Mojarra 2.3.9.SP01 for context '/lab3_war_exploded'
+2019-03-20 13:46:20,317 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 7) WFLYUT0021: Registered web context: '/lab3_war_exploded' for server 'default-server'
+2019-03-20 13:46:20,481 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3_war_exploded" (runtime-name : "lab3_war_exploded.war")
+2019-03-20 13:52:35,103 WARNING [javax.enterprise.resource.webcontainer.jsf.lifecycle] (default task-2) #{Losowanie.wyslij}: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null: javax.faces.FacesException: #{Losowanie.wyslij}: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:96)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:71)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UICommand.broadcast(UICommand.java:222)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:847)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1395)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:58)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:76)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:177)
+	at javax.faces.api@2.3.9.SP01//javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:707)
+	at javax.faces.api@2.3.9.SP01//javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:55)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.faces.el.EvaluationException: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:70)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:82)
+	... 55 more
+Caused by: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:67)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:66)
+	... 56 more
+
+2019-03-20 13:52:35,115 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /lab3_war_exploded/index.xhtml: javax.servlet.ServletException: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at javax.faces.api@2.3.9.SP01//javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:725)
+	at javax.faces.api@2.3.9.SP01//javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at io.opentracing.contrib.opentracing-jaxrs2//io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:55)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.0.19.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow@16.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet@2.0.19.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:364)
+	at io.undertow.core@2.0.19.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: javax.faces.el.EvaluationException: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:70)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:82)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:71)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UICommand.broadcast(UICommand.java:222)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:847)
+	at javax.faces.api@2.3.9.SP01//javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1395)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:58)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:76)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:177)
+	at javax.faces.api@2.3.9.SP01//javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:707)
+	... 47 more
+Caused by: javax.el.PropertyNotFoundException: /index.xhtml @15,71 action="#{Losowanie.wyslij}": Target Unreachable, identifier 'Losowanie' resolved to null
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:67)
+	at com.sun.jsf-impl@2.3.9.SP01//com.sun.faces.application.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:66)
+	... 56 more
+
+2019-03-20 13:53:03,376 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-03-20 13:53:05,474 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-03-20 13:53:05,521 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-03-20 13:53:06,368 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-03-20 13:53:06,383 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-03-20 13:53:06,383 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52062,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-03-20 13:53:10,489 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-03-20 13:53:12,572 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:53:12,832 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-03-20 13:53:13,216 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-03-20 13:53:13,552 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-03-20 13:53:13,756 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-03-20 13:53:14,068 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-03-20 13:53:14,176 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-03-20 13:53:14,288 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-03-20 13:53:14,228 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-03-20 13:53:14,240 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-03-20 13:53:14,240 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-03-20 13:53:14,408 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-03-20 13:53:14,408 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-03-20 13:53:14,408 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-03-20 13:53:14,636 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-03-20 13:53:15,119 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-03-20 13:53:15,171 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-03-20 13:53:15,135 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-03-20 13:53:15,187 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-03-20 13:53:15,183 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-03-20 13:53:15,219 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-03-20 13:53:15,351 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-03-20 13:53:15,431 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-03-20 13:53:15,483 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-03-20 13:53:15,515 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-03-20 13:53:15,695 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:53:15,767 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [2] config entries and added [4] replacements
+2019-03-20 13:53:15,795 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-03-20 13:53:15,815 INFO  [io.smallrye.metrics] (MSC service thread 1-7) Converted [3] config entries and added [18] replacements
+2019-03-20 13:53:16,143 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-03-20 13:53:16,167 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-03-20 13:53:16,699 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-03-20 13:53:16,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2019-03-20 13:53:16,911 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2019-03-20 13:53:17,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-03-20 13:53:18,407 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2019-03-20 13:53:18,711 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-03-20 13:53:18,883 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-03-20 13:53:19,146 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-03-20 13:53:19,318 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-03-20 13:53:19,502 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-03-20 13:53:20,658 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-03-20 13:53:21,526 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-03-20 13:53:21,534 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-03-20 13:53:21,534 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-03-20 13:53:21,542 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 19272ms - Started 305 of 531 services (324 services are lazy, passive or on-demand)
+2019-03-20 13:53:23,749 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "lab3_war_exploded" (runtime-name: "lab3_war_exploded.war")
+2019-03-20 13:53:26,039 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment lab3_war_exploded.war
+2019-03-20 13:53:26,383 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 6.0.15.Final
+2019-03-20 13:53:27,681 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-03-20 13:53:27,697 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.0 (Final)
+2019-03-20 13:53:28,889 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 5) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-03-20 13:53:28,889 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-03-20 13:53:28,905 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2019-03-20 13:53:30,779 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 5) Initializing Mojarra 2.3.9.SP01 for context '/lab3_war_exploded'
+2019-03-20 13:53:32,280 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 5) WFLYUT0021: Registered web context: '/lab3_war_exploded' for server 'default-server'
+2019-03-20 13:53:32,343 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3_war_exploded" (runtime-name : "lab3_war_exploded.war")
+2019-03-20 13:57:12,217 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 5) WFLYUT0022: Unregistered web context: '/lab3_war_exploded' from server 'default-server'
