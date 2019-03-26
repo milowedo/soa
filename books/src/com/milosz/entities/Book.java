@@ -12,6 +12,6 @@ public class Book {
     private String author;
     private String type;
     private Integer price;
-    private Currency currency;
+    private String currency;
     private int pageNumber;
 }

@@ -1,36 +1,40 @@
 package com.milosz.model;
 
 import com.milosz.entities.Book;
-import com.milosz.entities.Currency;
 import org.omnifaces.cdi.ViewScoped;
 
 import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.Locale;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @ManagedBean(name = "BookList")
 @ViewScoped
 public class BookList implements Serializable {
-   private Collection<Book> books = new LinkedList<>(Arrays.asList(
-           new Book("Silmarilion", "Tolkien", "Fantasy", 10, Currency.PLN, 600 ),
-           new Book("Zamek", "Kafka", "Drama", 18, Currency.PLN, 246 ),
-           new Book("Władca much", "Golding", "War Drama", 21, Currency.PLN, 222 ),
-           new Book("Mechaniczna Pomarańcza", "Burgess", "Powieść", 12, Currency.PLN, 159 ),
-           new Book("Król Szczurów", "Clavell", "Powieść", 17, Currency.PLN, 419 )
+   private Collection<Book> books = new ArrayList<>(Arrays.asList(
+           new Book("Silmarilion", "Tolkien", "Fantasy", 10, "PLN", 600 ),
+           new Book("Zamek", "Kafka", "Drama", 18, "PLN", 246 ),
+           new Book("Władca much", "Golding", "War Drama", 21, "PLN", 222 ),
+           new Book("Mechaniczna Pomarańcza", "Burgess", "Powieść", 5, "USD", 159 ),
+           new Book("Ja, Klaudiusz", "Graves", "Powieść", 22, "PLN", 412 ),
+           new Book("Oliver Twist", "Dickens", "Powieść", 12, "PLN", 417 ),
+           new Book("Little Women", "Alcott", "Powieść", 4, "USD", 159 ),
+           new Book("Wojna światów", "Wells", "Science fiction", 15, "PLN", 135 ),
+           new Book("Wehikuł czasu", "Wells", "Science fiction", 23, "PLN", 90 ),
+           new Book("Sen nocy letniej", "Szekspir", "Dramat", 3, "USD", 155 ),
+           new Book("Król Szczurów", "Clavell", "Powieść", 4, "EUR", 419 )
    ));
 
    private Collection<Book> filteredBooks;
 
-   public boolean filterByPrice(Object value, Object filter) {
-      System.out.println("int filter by price");
+   private Collection<Book> originalCurrencyBooks = new ArrayList<>(books);
+
+   public boolean filterByPrice(Object value, Object filter, Locale locale) {
       String filterText = (filter == null) ? null : filter.toString().trim();
 
       if(filterText == null||filterText.equals("")) return true;
       if(value == null) return false;
-      return ((Comparable) value).compareTo(Integer.valueOf(filterText)) > 0;
+      return ((Comparable) value).compareTo(Integer.valueOf(filterText)) <=0 ;
    }
 
    public Collection<Book> getBooks() {
@@ -43,5 +47,34 @@ public class BookList implements Serializable {
 
    public Collection<Book> getFilteredBooks() {
       return filteredBooks;
+   }
+
+   public List<String> getCurrencies(){
+      return new ArrayList<>(Arrays.asList("PLN","USD","EUR"));
+   }
+
+   public void convertToPln() {
+      this.books.stream().map(BookList::convertSingleToPln).collect(Collectors.toList());
+   }
+   public void convertToOriginal() {
+      this.books = this.originalCurrencyBooks;
+   }
+
+   private static Book convertSingleToPln(Book book){
+      Integer currentPrice;
+      if(book.getCurrency().equals("PLN")){
+         return book;
+
+      }else if(book.getCurrency().equals("USD")){
+         currentPrice = book.getPrice();
+         book.setPrice(currentPrice*3);
+
+      }else {
+         currentPrice = book.getPrice();
+         book.setPrice(currentPrice*4);
+      }
+
+      book.setCurrency("PLN");
+      return book;
    }
 }

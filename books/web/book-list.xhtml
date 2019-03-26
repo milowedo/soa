@@ -8,48 +8,71 @@
       xml:lang="en" lang="en">
 <h:head>
     <title>Books</title>
+    <style type="text/css">
 
+        .ui-filter-column .ui-column-customfilter .custom-filter {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+    </style>
 </h:head>
 
 <h:body>
-    <p:inputText rendered="false" />
     <h:form>
          <p:dataTable var="book" value="#{BookList.books}"
                       widgetVar="booksTable"
+                      id="books"
                       emptyMessage="No books found with given criteria"
                       filteredValue="#{BookList.filteredBooks}">
 
+             WORLD OF BOOKS
              <f:facet name="header">
-                 <p:outputPanel>
-                     <h:outputText value="Search all fields:" />
-                     <p:inputText id="globalFilter"
-                                  onkeyup="PF('booksTable').filter()"
-                                  style="width:150px"
-                                  placeholder="Enter keyword"/>
-                 </p:outputPanel>
+                 <p:commandButton value="to pln"
+                                  action="#{BookList.convertToPln}"
+                                  style="margin-right:20px;"
+                                  update="books"
+                                  ajax="true"/>
+                 <p:commandButton value="to original"
+                                  action="#{BookList.convertToOriginal}"
+                                  update="books"
+                                  ajax="true"/>
+
+                 <p:commandButton id="toggler"
+                                  type="button"
+                                  value="Hide columns"
+                                  style="padding-left: 5px !important; float:left; border-radius: 2px "
+                                  icon="pi" />
+                 <p:columnToggler datasource="books" trigger="toggler" />
              </f:facet>
 
-            <p:column headerText="title">
-                <h:outputText value="#{book.title}" />
-            </p:column>
-
-            <p:column headerText="author">
-                <h:outputText value="#{book.author}" />
-            </p:column>
-
-            <p:column headerText="type">
-                <h:outputText value="#{book.type}" />
-            </p:column>
-
-             <p:column filterBy="#{book.price}"
-                       headerText="price"
-                       filterFunction="#{BookList.filterByPrice}">
-                 <h:outputText value="#{book.price}">
-                     <f:convertNumber currencySymbol="$" type="currency"/>
-                 </h:outputText>
+             <p:column filterBy="#{book.title}" headerText="title" filterMatchMode="contains"  sortBy="#{book.title}">
+                 <h:outputText value="#{book.title}" />
              </p:column>
 
-            <p:column headerText="pages">
+             <p:column filterBy="#{book.author}" headerText="author" filterMatchMode="contains" sortBy="#{book.author}">
+                 <h:outputText value="#{book.author}" />
+             </p:column>
+
+             <p:column filterBy="#{book.type}" headerText="type" filterMatchMode="contains" sortBy="#{book.type}">
+                 <h:outputText value="#{book.type}" />
+             </p:column>
+
+             <p:column filterBy="#{book.price}" headerText="max price" filterFunction="#{BookList.filterByPrice}" sortBy="#{book.price}">
+                 <h:outputText style="text-align: right" value="#{book.price}" />
+             </p:column>
+
+             <p:column filterBy="#{book.currency}" headerText="currency"  filterMatchMode="in"  sortBy="#{book.currency}">
+                 <f:facet name="filter">
+                     <p:selectCheckboxMenu label="currencies" onchange="PF('booksTable').filter()"
+                                           scrollHeight="150" styleClass="custom-filter">
+                         <f:selectItems value="#{BookList.currencies}" />
+                     </p:selectCheckboxMenu>
+                 </f:facet>
+                 <h:outputText value="#{book.currency}" />
+             </p:column>
+
+            <p:column headerText="pages" sortBy="#{book.pageNumber}">
                 <h:outputText value="#{book.pageNumber}" />
             </p:column>
         </p:dataTable>
