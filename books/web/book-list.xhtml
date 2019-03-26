@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xml:lang="en" lang="en">
+<h:head>
+    <title>Books</title>
+
+</h:head>
+
+<h:body>
+    <p:inputText rendered="false" />
+    <h:form>
+         <p:dataTable var="book" value="#{BookList.books}"
+                      widgetVar="booksTable"
+                      emptyMessage="No books found with given criteria"
+                      filteredValue="#{BookList.filteredBooks}">
+
+             <f:facet name="header">
+                 <p:outputPanel>
+                     <h:outputText value="Search all fields:" />
+                     <p:inputText id="globalFilter"
+                                  onkeyup="PF('booksTable').filter()"
+                                  style="width:150px"
+                                  placeholder="Enter keyword"/>
+                 </p:outputPanel>
+             </f:facet>
+
+            <p:column headerText="title">
+                <h:outputText value="#{book.title}" />
+            </p:column>
+
+            <p:column headerText="author">
+                <h:outputText value="#{book.author}" />
+            </p:column>
+
+            <p:column headerText="type">
+                <h:outputText value="#{book.type}" />
+            </p:column>
+
+             <p:column filterBy="#{book.price}"
+                       headerText="price"
+                       filterFunction="#{BookList.filterByPrice}">
+                 <h:outputText value="#{book.price}">
+                     <f:convertNumber currencySymbol="$" type="currency"/>
+                 </h:outputText>
+             </p:column>
+
+            <p:column headerText="pages">
+                <h:outputText value="#{book.pageNumber}" />
+            </p:column>
+        </p:dataTable>
+    </h:form>
+</h:body>
+</html>
