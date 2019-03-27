@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xml:lang="en" lang="en">
+
+<h:head>
+    <title>Podsumowanie</title>
+    <style type="text/css">
+        .ui-filter-column .ui-column-customfilter .custom-filter {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .ui-datatable .ui-datatable-footer {
+            text-align:center;
+        }
+
+        .ui-datalist ul {
+            padding: 10px;
+            margin: 10px 10px;
+        }
+
+        .ui-datatable .ui-button-icon-only .ui-button-text {
+            padding: 0;
+            line-height: 1.2;
+        }
+
+    </style>
+</h:head>
+<body style="width: 100% !important;">
+<h:form>
+    <p:dataTable value="#{Summary.selected}"
+                 border="1"
+                 id="books"
+                 var="book">
+
+        <p:column headerText="title" >
+            <h:outputText value="#{book.title}" />
+        </p:column>
+
+        <p:column headerText="author" >
+            <h:outputText value="#{book.author}" />
+        </p:column>
+
+        <p:column headerText="price" >
+            <h:outputText value="#{book.price}" />
+        </p:column>
+
+        <p:column headerText="currency" >
+            <h:outputText value="#{book.currency}" />
+        </p:column>
+    </p:dataTable>
+    <br/>
+    <p:outputLabel id = "sum" value="Total is #{Summary.calculateSum} PLN"/>
+
+
+
+</h:form>
+</body>
+</html>

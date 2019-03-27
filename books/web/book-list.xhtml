@@ -9,10 +9,30 @@
 <h:head>
     <title>Books</title>
     <style type="text/css">
-
         .ui-filter-column .ui-column-customfilter .custom-filter {
             width: 100%;
             box-sizing: border-box;
+        }
+        .value {
+            font-weight: bold;
+        }
+
+        .ui-datatable {
+            margin-bottom: 25px
+        }
+
+        .ui-datatable .ui-datatable-footer {
+            text-align:left;
+        }
+
+        .ui-datalist ul {
+            padding: 0 0 0 10px;
+            margin: 5px 0;
+        }
+
+        .ui-datatable .ui-button-icon-only .ui-button-text {
+            padding: 0;
+            line-height: 1.2;
         }
 
     </style>
@@ -20,9 +40,11 @@
 
 <h:body>
     <h:form>
-         <p:dataTable var="book" value="#{BookList.books}"
+         <p:dataTable value="#{BookList.books}"
                       widgetVar="booksTable"
+                      border="1"
                       id="books"
+                      var="book"
                       emptyMessage="No books found with given criteria"
                       filteredValue="#{BookList.filteredBooks}">
 
@@ -33,6 +55,7 @@
                                   style="margin-right:20px;"
                                   update="books"
                                   ajax="true"/>
+
                  <p:commandButton value="to original"
                                   action="#{BookList.convertToOriginal}"
                                   update="books"
@@ -46,6 +69,8 @@
                  <p:columnToggler datasource="books" trigger="toggler" />
              </f:facet>
 
+             <!--<p:column selectionMode="multiple" style="width:16px;text-align:center"/>-->
+
              <p:column filterBy="#{book.title}" headerText="title" filterMatchMode="contains"  sortBy="#{book.title}">
                  <h:outputText value="#{book.title}" />
              </p:column>
@@ -58,7 +83,7 @@
                  <h:outputText value="#{book.type}" />
              </p:column>
 
-             <p:column filterBy="#{book.price}" headerText="max price" filterFunction="#{BookList.filterByPrice}" sortBy="#{book.price}">
+             <p:column filterBy="#{book.price}" headerText="price" filterFunction="#{BookList.filterByPrice}" sortBy="#{book.price}">
                  <h:outputText style="text-align: right" value="#{book.price}" />
              </p:column>
 
@@ -75,7 +100,17 @@
             <p:column headerText="pages" sortBy="#{book.pageNumber}">
                 <h:outputText value="#{book.pageNumber}" />
             </p:column>
+
+             <p:column headerText="shop">
+                 <p:commandButton value="add to cart"
+                                  action="#{Summary.add(book)}"
+                                  ajax="true"/>
+             </p:column>
+
         </p:dataTable>
+
+        <p:commandButton value="Podsumowanie"
+                         action="#{BookList.finalizeBooks()}"/>
     </h:form>
 </h:body>
 </html>

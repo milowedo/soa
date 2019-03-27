@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xml:lang="en" lang="en">
+<f:view>
+    <h:head>
+        Dziękujemy!
+    </h:head>
+    <h:body>
+        <h2>Podsumowanie </h2> <br/>
+        Imię: <b><h:outputText value="#{CustomerData.name}"/>
+        </b><br/>
+        E-mail: <b><h:outputText value="#{CustomerData.email}"/>
+        </b><br/>
+        Wiek: <b><h:outputText value="#{CustomerData.age}"/>
+        </b><br/>
+        Płeć: <b><h:outputText value="#{CustomerData.gender}"/>
+        </b><br/>
+        Wykształcenie: <b><h:outputText value="#{CustomerData.education}"/></b><br/>
+
+        <h:panelGrid columns="3" rendered="#{CustomerData.gender.equals('Man')}">
+            <h:outputLabel for="chest">Klatka:</h:outputLabel>
+            <h:outputText value="#{CustomerData.chest}" id="chest"/>
+            <br/>
+            <h:outputLabel for="waist_m">Pas:</h:outputLabel>
+            <h:outputText value="#{CustomerData.waist_m}" id="waist_m"/>
+            <br/>
+        </h:panelGrid>
+
+        <h:panelGrid columns="3"  rendered="#{CustomerData.gender.equals('Woman')}">
+            <h:outputLabel for="bust">Obwód biustu:</h:outputLabel>
+            <h:outputText value="#{CustomerData.bust}" id="bust"/>
+            <br/>
+            <h:outputLabel for="cup">Wielkość miseczki:</h:outputLabel>
+            <h:outputText value="#{CustomerData.cup}" id="cup"/>
+            <br/>
+            <h:outputLabel for="talia">Talia:</h:outputLabel>
+            <h:outputText value="#{CustomerData.hips}" id="talia"/>
+            <br/>
+            <h:outputLabel for="waist">Biodra:</h:outputLabel>
+            <h:outputText value="#{CustomerData.waist}" id="waist"/>
+            <br/><br/>
+        </h:panelGrid>
+
+        Ile jesteś w stanie przeznaczyć miesięcznie na zakup ubrania?:<br/><br/>
+        <b><h:outputText value="#{CustomerData.amountForClothes}"/></b><br/>
+
+        Jak często dokonujesz zakupu ubrania?:<br/><br/>
+        <b><h:outputText value="#{CustomerData.howOften}"/></b><br/>
+
+        W jakich kolorach preferujesz ubrania?:<br/><br/>
+        <ui:repeat value="#{CustomerData.colour}" var="colour">
+            <b><h:outputText value="#{colour}"/></b><br/>
+        </ui:repeat>
+
+        Jakiego rodzaju ubrania najchętniej kupujesz?:<br/><br/>
+        <ui:repeat value="#{CustomerData.typeOfClothing}" var="typeOfClothing">
+            <b><h:outputText value="#{typeOfClothing}"/></b><br/>
+        </ui:repeat>
+
+    </h:body>
+</f:view>
+</html>

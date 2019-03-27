@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+
+    </h:head>
+    <h:outputLabel value="Hello fellow customer!" style="text-align: center !important;"/>
+   <br/><br/>
+    <h:body>
+        <h:form>
+
+            <h:panelGrid columns="4" width="40%">
+                <h:outputLabel for="name">Name:</h:outputLabel>
+                <h:inputText requiredMessage="required" value="#{CustomerData.name}" id="name">
+                    <f:validateRequired for="name" />
+                </h:inputText>
+                <h:message for="name" style="color: red"/>
+
+
+                <br/>
+                <h:outputLabel for="email">Email:</h:outputLabel>
+                <h:inputText validatorMessage="required valid email address"
+                             value="#{CustomerData.email}" id="email">
+                    <f:validateRegex pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" for="email" />
+                </h:inputText>
+                <h:message for="email" style="color: red"/>
+
+
+                <br/>
+                <h:outputLabel for="age">Age:</h:outputLabel>
+                <h:inputText value="#{CustomerData.age}" id="age">
+                    <f:validateLongRange maximum="100" minimum="10" for="age" />
+                    <h:message for="age" style="color: red"/>
+                </h:inputText>
+                <h:message for="age" style="color: red"/>
+
+                <br/>
+                <h:outputLabel for="gender">Gender:</h:outputLabel>
+                <h:selectOneMenu required="true" requiredMessage="choose gender"
+                                 id="gender" value="#{CustomerData.gender}">
+                    <f:selectItem itemLabel="Man" itemValue="Man"/>
+                    <f:selectItem itemLabel="Woman" itemValue="Woman"/>
+                    <f:ajax event="change" execute="@this" render="genderVar sendButton"/>
+                </h:selectOneMenu>
+                <h:message for="gender" style="color: red"/>
+
+                <br/>
+                <h:outputLabel for="education">Education:</h:outputLabel>
+                <h:inputText value="#{CustomerData.education}" id="education">
+                    <h:message for="education" style="color: red"/>
+                </h:inputText>
+                <h:message for="education" style="color: red"/>
+
+                <br/>
+                <h:outputLabel for="height">Height:</h:outputLabel>
+                <h:inputText value="#{CustomerData.height}" id="height">
+                    <f:validateLongRange maximum="200" minimum="150" for="age" />
+                    <h:message for="height" style="color: red"/>
+                </h:inputText>
+                <h:message for="height" style="color: red"/>
+
+                <br/>
+            </h:panelGrid>
+
+            <h:panelGroup id ="genderVar">
+                <h:panelGrid
+                             rendered="#{CustomerData.gender.equals('Woman')}">
+                    <h:outputLabel for="bust">Bust:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.bust}" id="bust">
+                    </h:inputText>
+
+                    <br/>
+                    <h:outputLabel for="cup">Cup:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.cup}" id="cup">
+                    </h:inputText>
+                    <h:message for="cup" style="color: red"/>
+                    <br/>
+                    <h:outputLabel for="waist">Waist:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.waist}" id="waist">
+                    </h:inputText>
+                    <h:message for="waist" style="color: red"/>
+                    <br/>
+                    <h:outputLabel for="hips">Hips:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.hips}" id="hips">
+                    </h:inputText>
+                    <h:message for="hips" style="color: red"/>
+                    <br/>
+                </h:panelGrid>
+
+                <h:panelGrid rendered="#{CustomerData.gender.equals('Man')}">
+                    <h:outputLabel for="chest">Chest:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.chest}" id="chest">
+                        <h:message for="chest" style="color: red"/>
+                    </h:inputText>
+                    <h:message for="chest" style="color: red"/>
+                    <br/>
+                    <h:outputLabel for="waist_m">Waist:</h:outputLabel>
+                    <h:inputText value="#{CustomerData.waist_m}" id="waist_m">
+                        <h:message for="waist_m" style="color: red"/>
+                    </h:inputText>
+                    <h:message for="waist_m" style="color: red"/>
+            <br/>
+            </h:panelGrid>
+            </h:panelGroup>
+
+            <h:panelGroup id="sendButton">
+                <h:commandButton value="Send"
+                                 rendered="#{!CustomerData.wasSent}"
+                                 action="#{CustomerData.send()}"/>
+            </h:panelGroup>
+
+            <h:panelGrid rendered="#{CustomerData.wasSent}" columns="3">
+                <h:outputLabel for="cost">Ile jesteś w stanie przeznaczyc miesięcznie na zakup ubrania?: </h:outputLabel>
+                <h:selectOneMenu id="cost" value="#{CustomerData.amountForClothes}">
+                    <f:selectItem itemValue="do 100zł" itemLabel="do 100zł"/>
+                    <f:selectItem itemValue="100-500 zł" itemLabel="100-500 zł"/>
+                    <f:selectItem itemValue="500-1000 zł" itemLabel="500-1000 zł"/>
+                    <f:selectItem itemValue="powyżej 1000 zł" itemLabel="powyzej 1000 zł"/>
+                </h:selectOneMenu>
+                <br/>
+                <br/>
+                <br/>
+                <h:outputLabel for="frequency">Jak często dokonujesz zakupu ubrania?:</h:outputLabel>
+                <h:selectOneMenu id="frequency" value="#{CustomerData.howOften}">
+                    <f:selectItem itemValue="Codziennie" itemLabel="Codziennie"/>
+                    <f:selectItem itemValue="Raz w tygodniu" itemLabel="Raz w tygodniu"/>
+                    <f:selectItem itemValue="Raz w miesiącu" itemLabel="Raz w miesiącu"/>
+                    <f:selectItem itemValue="Kilka razy w roku" itemLabel="Kilka razy w roku"/>
+                </h:selectOneMenu>
+                <br/>
+                <br/>
+                <br/>
+                <h:outputLabel for="colors">W jakich kolorach preferujesz ubrania?:</h:outputLabel>
+                <h:selectManyCheckbox id="colors" value="#{CustomerData.colour}">
+                    <f:selectItem itemValue="Kolorowo-jaskrawych" itemLabel="Kolorowo-jaskrawych"/>
+                    <f:selectItem itemValue="Stonowanych w szarościach" itemLabel="Stonowanych w szarościach"/>
+                    <f:selectItem itemValue="W czerni i bieli" itemLabel="W czerni i bieli"/>
+                    <f:selectItem itemValue="W samej czerni" itemLabel="W samej czerni"/>
+                </h:selectManyCheckbox>
+                <br/>
+                <br/>
+                <br/>
+                <h:outputLabel for="clothes">Jakiego rodzaju ubrania najchętniej kupujesz?</h:outputLabel>
+                <h:selectManyCheckbox id="clothes" value="#{CustomerData.typeOfClothing}"
+                                      rendered="#{CustomerData.gender.equals('Woman')}">
+                    <f:selectItem itemValue="garsonki" itemLabel="garsonki"/>
+                    <f:selectItem itemValue="bluzki" itemLabel="bluzki"/>
+                    <f:selectItem itemValue="spódniczki" itemLabel="spódniczki"/>
+                    <f:selectItem itemValue="spodnie" itemLabel="spodnie"/>
+                </h:selectManyCheckbox>
+                <h:selectManyCheckbox value="#{CustomerData.typeOfClothing}"
+                                      rendered="#{CustomerData.gender.equals('Man')}">
+                    <f:selectItem itemValue="spodnie" itemLabel="spodnie"/>
+                    <f:selectItem itemValue="spodenki" itemLabel="spodenki"/>
+                    <f:selectItem itemValue="garnitury" itemLabel="garnitury"/>
+                    <f:selectItem itemValue="koszule" itemLabel="koszule"/>
+                    <f:selectItem itemValue="krawaty" itemLabel="krawaty"/>
+                </h:selectManyCheckbox>
+                <br/>
+                <br/>
+                <br/>
+                <h:commandButton value="Final" action="#{CustomerData.finish()}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</f:view>
+</html>

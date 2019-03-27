@@ -519,8 +519,8 @@
         <deployment name="lab3_war_exploded" runtime-name="lab3_war_exploded.war">
             <fs-exploded path="C:\wildfly-soa\lab3\out\artifacts\lab3_war_exploded"/>
         </deployment>
-        <deployment name="ankiety_war_exploded.war" runtime-name="ankiety_war_exploded.war" enabled="false">
-            <fs-exploded path="C:\wildfly-soa\ankiety\out\artifacts\ankiety_war_exploded.war"/>
+        <deployment name="books_war_exploded.war" runtime-name="books_war_exploded.war" enabled="false">
+            <fs-exploded path="C:\wildfly-soa\books\out\artifacts\books_war_exploded.war"/>
         </deployment>
     </deployments>
 </server>
