@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui" >
+<h:head>
+
+    <title>Theatre tickets booking</title>
+</h:head>
+
+<h:body>
+
+    <h:form>
+        <p:messages id="messages" showDetail="true" closable="true">
+            <p:autoUpdate/>
+        </p:messages>
+    </h:form>
+
+    <h:form>
+        <!-- wybieranie rodzaju miejsca -->
+        <p:outputLabel for="seatType" value="Wybierz rodzaj miejsca:" />
+        <p:selectOneListbox id="seatType" value="#{theaterView.selectedType}">
+            <f:selectItem itemLabel="Parter" itemValue="Parter" />
+            <f:selectItem itemLabel="Balkon I" itemValue="Balkon I" />
+            <f:selectItem itemLabel="Balkon II" itemValue="Balkon II" />
+        </p:selectOneListbox>
+        <p:ajax event="click"  update="available sum seats"/>
+        <br/>
+
+        <p:outputLabel for="available">Ilość dostępnych miejsc tego typu: </p:outputLabel>
+        <p:outputLabel id="available" value="#{theaterView.seatAvailabilityChecker.showNumberOfAvailableByType(theaterView.selectedType)}"/>
+        <br/>
+        <br/>
+
+        <p:outputLabel for="seats">Numery dostępnych miejsc: </p:outputLabel>
+        <p:selectOneListbox id="seats" value="#{theaterView.seatNumber}" var="t" >
+            <f:selectItems var="seat" itemValue="#{seat}"
+                    value="#{theaterView.seatAvailabilityChecker.showAvailableSeatsOfType(theaterView.selectedType)}"
+            />
+            <p:column>
+                <h:outputText value="#{t}" />
+            </p:column>
+            <p:ajax event="click" update=""/>
+        </p:selectOneListbox>
+        <br/>
+
+        <p:outputLabel for="selected">Wybrane miejce: </p:outputLabel>
+        <p:outputLabel id="selected"
+                       value="Rodzaj: #{theaterView.selectedType}, Miejsce: #{theaterView.seatNumber}"/><br/>
+
+
+        <p:outputLabel for="sum">Koszt: </p:outputLabel>
+        <p:outputLabel id="sum" value="#{theaterView.getSeatPriceByType()} zł"/><br/>
+
+
+
+
+        <p:commandButton value="Kup bilet" update="@form"
+                         action="#{theaterView.bookSeat()}">
+        </p:commandButton>
+        <br/>
+
+        <p:outputLabel for="balance">Twój balans: </p:outputLabel>
+        <p:outputLabel id="balance" value="#{theaterView.paymentService.getAccountBalance()} zł"/><br/>
+
+
+        <p:outputLabel for="balance">Twoje bilety: </p:outputLabel>
+        <p:dataTable id = "tickets"  value="#{theaterView.boughtSeats}" var="seat">
+            <p:column headerText="Miejsce">
+                <h:outputText value="#{seat.number}" />
+            </p:column>
+            <p:column headerText="Rodzaj">
+                <h:outputText value="#{seat.type}" />
+            </p:column>
+        </p:dataTable>
+
+
+        <br/>
+
+
+    </h:form>
+</h:body>
+</html>
