@@ -22,7 +22,6 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>agh.soa.ejb</groupId>
