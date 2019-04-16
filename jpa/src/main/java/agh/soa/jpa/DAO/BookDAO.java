@@ -2,23 +2,26 @@ package agh.soa.jpa.DAO;
 
 import agh.soa.jpa.entities.Book;
 
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
-import javax.persistence.*;
 
+import javax.annotation.PostConstruct;
+import javax.persistence.*;
 import java.util.*;
 
-@Singleton
-@Startup
-public class BookDAO {
+public class BookDAO implements IBookDAO {
 
     private EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgres");
     private EntityManager em = factory.createEntityManager();
 
     private List<Book> books;
 
-    public BookDAO() {
+    @PostConstruct
+    private void init(){
+        System.out.println("henlo from the dao bby");
         books = this.getAll();
+    }
+
+    public BookDAO() {
+        System.out.println("in dao constructor");
     }
 
     public List<Book> getAll() {

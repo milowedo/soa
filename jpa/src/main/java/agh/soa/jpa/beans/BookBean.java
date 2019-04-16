@@ -1,22 +1,28 @@
 package agh.soa.jpa.beans;
 
-import agh.soa.jpa.DAO.BookDAO;
+import agh.soa.jpa.DAO.IBookDAO;
 import agh.soa.jpa.entities.Book;
 import org.primefaces.event.RowEditEvent;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.io.Serializable;
 import java.util.*;
 
-@ManagedBean(name = "BookBean")
-@ViewScoped
+@Named("BookBean")
+@SessionScoped
 public class BookBean implements Serializable {
 
-   private BookDAO bookDAO = new BookDAO();
+   private IBookDAO bookDAO;
 
-   private List<Book> books = bookDAO.getBooks();
+   @Inject
+    public BookBean(IBookDAO bookDAO) {
+        this.bookDAO = bookDAO;
+        this.books = this.bookDAO.getBooks();
+    }
 
+    private List<Book> books;
 
    public void onRowEdit(RowEditEvent event) {
        int editedBookID = (((Book) event.getObject()).getId());
