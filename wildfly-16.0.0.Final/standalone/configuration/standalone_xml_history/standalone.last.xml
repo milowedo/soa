@@ -532,8 +532,8 @@
         </outbound-socket-binding>
     </socket-binding-group>
     <deployments>
-        <deployment name="jpa-1.0-SNAPSHOT" runtime-name="jpa-1.0-SNAPSHOT.war">
-            <fs-exploded path="C:\wildfly-soa\jpa\target\jpa-1.0-SNAPSHOT"/>
+        <deployment name="dao-impl-1.0-SNAPSHOT.war" runtime-name="dao-impl-1.0-SNAPSHOT.war">
+            <fs-archive path="C:\wildfly-soa\library\dao-impl\target\dao-impl-1.0-SNAPSHOT.war"/>
         </deployment>
     </deployments>
 </server>
