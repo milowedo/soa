@@ -532,8 +532,8 @@
         </outbound-socket-binding>
     </socket-binding-group>
     <deployments>
-        <deployment name="library-client-1.0-SNAPSHOT.war" runtime-name="library-client-1.0-SNAPSHOT.war" enabled="false">
-            <fs-archive path="C:\wildfly-soa\library\library-client\target\library-client-1.0-SNAPSHOT.war"/>
+        <deployment name="dao-impl-1.0-SNAPSHOT.war" runtime-name="dao-impl-1.0-SNAPSHOT.war" enabled="false">
+            <fs-archive path="C:\wildfly-soa\library\dao-impl\target\dao-impl-1.0-SNAPSHOT.war"/>
         </deployment>
     </deployments>
 </server>

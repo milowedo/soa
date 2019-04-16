@@ -2044,3 +2044,822 @@ Caused by: java.lang.NullPointerException
 2019-04-16 20:57:13,631 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
 2019-04-16 20:57:13,693 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
 2019-04-16 20:57:13,694 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/PostgresDS]
+2019-04-16 20:57:14,471 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-16 20:57:14,475 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-04-16 20:57:14,476 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-04-16 20:57:14,477 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 12503ms - Started 313 of 539 services (325 services are lazy, passive or on-demand)
+2019-04-16 20:57:19,337 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 20:57:27,855 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 20:57:28,403 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 37) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 20:57:28,463 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 37) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 20:57:28,516 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment dao-impl-1.0-SNAPSHOT.war
+2019-04-16 20:57:28,798 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 37) HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 20:57:28,804 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 37) HHH000206: hibernate.properties not found
+2019-04-16 20:57:29,050 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.15.Final
+2019-04-16 20:57:29,256 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 37) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-04-16 20:57:30,209 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-04-16 20:57:31,075 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.0 (Final)
+2019-04-16 20:57:31,751 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 37) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-04-16 20:57:31,783 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 7) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 20:57:32,186 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 7) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 20:57:32,436 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 7) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 20:57:32,446 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 7) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5229cf54
+2019-04-16 20:57:32,476 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 7) Envers integration enabled? : true
+2019-04-16 20:57:33,242 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 20:57:33,262 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2019-04-16 20:57:34,415 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 7) Initializing Mojarra 2.3.9.SP01 for context '/dao-impl-1.0-SNAPSHOT'
+2019-04-16 20:57:37,576 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 7) Running on PrimeFaces 7.0
+2019-04-16 20:57:37,742 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 7) WFLYUT0021: Registered web context: '/dao-impl-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 20:57:37,805 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name : "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 20:57:55,681 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 20:57:55,702 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 20:57:55,720 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 20:57:55,721 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5229cf54
+2019-04-16 20:57:55,723 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 20:57:55,738 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 20:57:55,879 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 20:57:55,880 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 20:57:55,921 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 20:57:56,004 ERROR [stderr] (default task-1) Database is emptyjava.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Book is not mapped [From Book where price = 3]
+2019-04-16 20:57:56,042 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 1
+2019-04-16 21:05:29,235 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0022: Unregistered web context: '/dao-impl-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 21:05:29,272 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:05:29,272 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 80) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@3e785c61
+2019-04-16 21:05:29,272 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:06:24,992 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-04-16 21:06:26,145 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-04-16 21:06:26,166 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-04-16 21:06:26,525 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-04-16 21:06:26,525 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-04-16 21:06:26,532 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:57393,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-04-16 21:06:29,054 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-04-16 21:06:30,549 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:06:30,623 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:06:30,776 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-04-16 21:06:30,815 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.6.5.Final
+2019-04-16 21:06:30,836 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.6.5.Final
+2019-04-16 21:06:31,033 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-04-16 21:06:31,044 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-04-16 21:06:31,064 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-16 21:06:31,077 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-04-16 21:06:31,096 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-04-16 21:06:31,096 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-04-16 21:06:31,146 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-16 21:06:31,213 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-04-16 21:06:31,352 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-16 21:06:31,386 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2019-04-16 21:06:31,467 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-16 21:06:31,494 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:06:31,523 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-04-16 21:06:31,544 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-04-16 21:06:31,647 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-04-16 21:06:31,666 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-16 21:06:31,683 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-04-16 21:06:31,767 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-04-16 21:06:31,967 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-04-16 21:06:32,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:06:32,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:/PostgresDS]
+2019-04-16 21:06:32,099 INFO  [io.smallrye.metrics] (MSC service thread 1-6) Converted [2] config entries and added [4] replacements
+2019-04-16 21:06:32,103 INFO  [io.smallrye.metrics] (MSC service thread 1-6) Converted [3] config entries and added [18] replacements
+2019-04-16 21:06:32,112 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-16 21:06:32,153 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgres
+2019-04-16 21:06:32,254 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-16 21:06:33,302 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-16 21:06:33,323 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-16 21:06:33,317 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-16 21:06:33,415 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-16 21:06:33,436 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2019-04-16 21:06:33,446 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2019-04-16 21:06:33,472 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2019-04-16 21:06:33,486 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-16 21:06:33,649 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-04-16 21:06:33,687 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-04-16 21:06:33,905 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-04-16 21:06:33,913 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-16 21:06:34,173 WARN  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-1) IJ020020: Connection Properties for DataSource: 'java:/PostgresDS' is empty, try to use driver-class: 'org.postgresql.Driver' and connection-url: 'jdbc:postgresql://localhost:5432/postgres' to connect database
+2019-04-16 21:06:34,220 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/PostgresDS]
+2019-04-16 21:06:34,235 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:06:34,277 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-04-16 21:06:34,737 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-16 21:06:34,746 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-04-16 21:06:34,746 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-04-16 21:06:34,746 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 10371ms - Started 313 of 539 services (325 services are lazy, passive or on-demand)
+2019-04-16 21:06:36,592 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:06:41,852 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:06:42,272 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 19) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:06:42,324 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 19) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:06:42,384 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment dao-impl-1.0-SNAPSHOT.war
+2019-04-16 21:06:42,487 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 19) HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 21:06:42,497 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 19) HHH000206: hibernate.properties not found
+2019-04-16 21:06:42,695 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.15.Final
+2019-04-16 21:06:42,915 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 19) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-04-16 21:06:43,780 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-04-16 21:06:44,415 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:06:44,722 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 3.1.0 (Final)
+2019-04-16 21:06:44,832 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:06:45,155 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 19) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-04-16 21:06:45,175 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 22) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:06:45,452 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 22) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:06:45,685 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 22) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:06:45,695 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 22) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:06:45,706 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 22) Envers integration enabled? : true
+2019-04-16 21:06:46,466 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:06:46,487 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2019-04-16 21:06:48,335 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 22) Initializing Mojarra 2.3.9.SP01 for context '/dao-impl-1.0-SNAPSHOT'
+2019-04-16 21:06:51,552 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 22) Running on PrimeFaces 7.0
+2019-04-16 21:06:51,725 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 22) WFLYUT0021: Registered web context: '/dao-impl-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 21:06:51,815 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name : "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:06:52,976 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:06:52,996 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:06:53,025 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:06:53,027 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:06:53,027 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 21:06:53,042 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 21:06:53,215 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 21:06:53,221 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 21:06:53,252 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 21:06:53,336 ERROR [stderr] (default task-1) Database is emptyjava.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Book is not mapped [From Book where price = 3]
+2019-04-16 21:06:53,396 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 1
+2019-04-16 21:06:54,020 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:06:54,040 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:06:54,062 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:06:54,063 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:06:54,066 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 21:06:54,075 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 21:06:54,107 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 21:06:54,108 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 21:06:54,115 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 21:06:54,119 ERROR [stderr] (default task-1) Database is emptyjava.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Book is not mapped [From Book where price = 3]
+2019-04-16 21:06:54,127 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 1
+2019-04-16 21:07:46,396 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:07:46,405 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 27) WFLYUT0022: Unregistered web context: '/dao-impl-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 21:07:46,515 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:07:46,515 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 81) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7a10a1d
+2019-04-16 21:07:46,525 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:07:47,602 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment dao-impl-1.0-SNAPSHOT.war (runtime-name: dao-impl-1.0-SNAPSHOT.war) in 1205ms
+2019-04-16 21:07:47,801 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:07:48,594 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:07:54,174 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:07:54,345 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:07:54,345 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 80) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:07:54,472 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment dao-impl-1.0-SNAPSHOT.war
+2019-04-16 21:07:54,921 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:07:54,962 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:07:54,993 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:07:54,993 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 80) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:07:55,003 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 80) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:07:55,003 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 80) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:07:55,015 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 80) Envers integration enabled? : true
+2019-04-16 21:07:56,012 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:07:56,012 INFO  [io.smallrye.metrics] (MSC service thread 1-1) MicroProfile: Metrics activated
+2019-04-16 21:07:56,867 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 78) Initializing Mojarra 2.3.9.SP01 for context '/dao-impl-1.0-SNAPSHOT'
+2019-04-16 21:07:58,796 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 78) Running on PrimeFaces 7.0
+2019-04-16 21:07:58,811 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/dao-impl-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 21:07:58,862 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0010: Deployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name : "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:08:01,985 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:08:02,018 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:08:02,033 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:08:02,034 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:08:02,037 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 21:08:02,050 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 21:08:02,114 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 21:08:02,114 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 21:08:02,115 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 21:08:02,186 INFO  [stdout] (default task-1) 0
+2019-04-16 21:08:02,517 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 0
+2019-04-16 21:28:56,045 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:28:56,047 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/dao-impl-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 21:28:56,071 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:28:56,072 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 91) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@29ff9162
+2019-04-16 21:28:56,075 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 91) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:28:58,047 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment dao-impl-1.0-SNAPSHOT.war (runtime-name: dao-impl-1.0-SNAPSHOT.war) in 2005ms
+2019-04-16 21:28:58,165 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:28:58,505 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:29:03,077 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:29:03,209 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:03,210 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 90) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:29:03,224 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment dao-impl-1.0-SNAPSHOT.war
+2019-04-16 21:29:03,482 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:29:03,518 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:29:03,557 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:03,558 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 90) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:29:03,590 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 90) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:29:03,590 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 90) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:29:03,595 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 90) Envers integration enabled? : true
+2019-04-16 21:29:03,987 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:29:03,988 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2019-04-16 21:29:04,308 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 90) Initializing Mojarra 2.3.9.SP01 for context '/dao-impl-1.0-SNAPSHOT'
+2019-04-16 21:29:05,007 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0021: Registered web context: '/dao-impl-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 21:29:05,048 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name : "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:29:05,248 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-16 21:29:07,837 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:29:08,014 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:08,014 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 90) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:29:08,120 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment library-client-1.0-SNAPSHOT.war
+2019-04-16 21:29:08,612 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:29:08,675 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:29:08,711 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:08,712 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 90) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:29:08,729 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 90) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:29:08,730 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 90) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6148c162
+2019-04-16 21:29:08,734 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 90) Envers integration enabled? : true
+2019-04-16 21:29:09,029 INFO  [io.smallrye.metrics] (MSC service thread 1-1) MicroProfile: Metrics activated
+2019-04-16 21:29:09,034 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-1) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:29:09,314 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."library-client-1.0-SNAPSHOT.war".WeldStartService: org.jboss.msc.service.StartException in service jboss.deployment.unit."library-client-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+	at org.jboss.msc@1.4.5.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1730)
+	at org.jboss.msc@1.4.5.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1558)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateInjectionPointForDeploymentProblems(Validator.java:378)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateInjectionPoint(Validator.java:290)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateGeneralBean(Validator.java:143)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateRIBean(Validator.java:164)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateBean(Validator.java:526)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.ConcurrentValidator$1.doWork(ConcurrentValidator.java:64)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.ConcurrentValidator$1.doWork(ConcurrentValidator.java:62)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:62)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:55)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+2019-04-16 21:29:09,322 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 3) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "library-client-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"library-client-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+"}}
+2019-04-16 21:29:09,323 ERROR [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0021: Deploy of deployment "library-client-1.0-SNAPSHOT.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"library-client-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+"}}
+2019-04-16 21:29:09,328 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:29:09,329 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:09,330 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 90) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@4a79bc91
+2019-04-16 21:29:09,331 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:09,671 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment library-client-1.0-SNAPSHOT.war (runtime-name: library-client-1.0-SNAPSHOT.war) in 348ms
+2019-04-16 21:29:40,595 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:29:40,595 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0022: Unregistered web context: '/dao-impl-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 21:29:40,612 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:29:40,613 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 96) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@1ad90def
+2019-04-16 21:29:40,614 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 96) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:18,308 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-04-16 21:32:19,383 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-04-16 21:32:19,399 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-04-16 21:32:19,760 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-04-16 21:32:19,762 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-04-16 21:32:19,767 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:59761,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-04-16 21:32:22,187 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-04-16 21:32:23,681 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:32:23,753 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 34) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:32:23,920 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-04-16 21:32:23,965 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-04-16 21:32:23,991 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-04-16 21:32:24,173 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-16 21:32:24,207 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-04-16 21:32:24,251 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-04-16 21:32:24,274 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-04-16 21:32:24,297 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-04-16 21:32:24,342 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-04-16 21:32:24,265 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-16 21:32:24,289 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-04-16 21:32:24,442 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-04-16 21:32:24,314 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-16 21:32:24,377 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2019-04-16 21:32:24,544 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-04-16 21:32:24,554 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-04-16 21:32:24,538 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-04-16 21:32:24,482 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-04-16 21:32:24,675 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-16 21:32:25,093 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-04-16 21:32:25,139 INFO  [io.smallrye.metrics] (MSC service thread 1-6) Converted [2] config entries and added [4] replacements
+2019-04-16 21:32:25,143 INFO  [io.smallrye.metrics] (MSC service thread 1-6) Converted [3] config entries and added [18] replacements
+2019-04-16 21:32:25,139 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:32:25,101 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-16 21:32:25,310 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-16 21:32:25,315 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgres
+2019-04-16 21:32:25,418 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:32:25,418 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/PostgresDS]
+2019-04-16 21:32:25,810 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-16 21:32:26,661 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-16 21:32:26,675 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-16 21:32:26,675 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-16 21:32:27,043 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-04-16 21:32:27,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-04-16 21:32:27,134 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.8.Final
+2019-04-16 21:32:27,239 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-04-16 21:32:27,293 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-16 21:32:27,607 WARN  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-1) IJ020020: Connection Properties for DataSource: 'java:/PostgresDS' is empty, try to use driver-class: 'org.postgresql.Driver' and connection-url: 'jdbc:postgresql://localhost:5432/postgres' to connect database
+2019-04-16 21:32:27,705 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:/PostgresDS]
+2019-04-16 21:32:27,777 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:32:27,848 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-16 21:32:27,874 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-16 21:32:27,896 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-04-16 21:32:28,236 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-04-16 21:32:28,558 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-04-16 21:32:29,633 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-16 21:32:29,640 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-04-16 21:32:29,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-04-16 21:32:29,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 11977ms - Started 313 of 539 services (325 services are lazy, passive or on-demand)
+2019-04-16 21:32:31,101 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "dao-impl-1.0-SNAPSHOT.war" (runtime-name: "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:32:35,919 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:32:36,384 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 5) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:36,428 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 5) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:32:36,480 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment dao-impl-1.0-SNAPSHOT.war
+2019-04-16 21:32:36,700 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 5) HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 21:32:36,704 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 5) HHH000206: hibernate.properties not found
+2019-04-16 21:32:37,039 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.15.Final
+2019-04-16 21:32:37,121 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 5) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-04-16 21:32:37,995 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:32:38,079 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-04-16 21:32:38,086 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 3.1.0 (Final)
+2019-04-16 21:32:38,282 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:32:38,761 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 2) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:39,030 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 5) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-04-16 21:32:39,164 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 2) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:32:39,406 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 2) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:32:39,420 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 2) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ecd3532
+2019-04-16 21:32:39,430 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 2) Envers integration enabled? : true
+2019-04-16 21:32:40,459 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:32:40,502 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated
+2019-04-16 21:32:42,143 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 5) Initializing Mojarra 2.3.9.SP01 for context '/dao-impl-1.0-SNAPSHOT'
+2019-04-16 21:32:43,920 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 5) WFLYUT0021: Registered web context: '/dao-impl-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 21:32:43,996 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "dao-impl-1.0-SNAPSHOT.war" (runtime-name : "dao-impl-1.0-SNAPSHOT.war")
+2019-04-16 21:32:44,135 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-16 21:32:47,405 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:32:47,550 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 5) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:47,550 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 5) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:32:47,639 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment library-client-1.0-SNAPSHOT.war
+2019-04-16 21:32:48,269 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:32:48,315 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:32:48,370 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 5) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:48,371 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 5) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:32:48,386 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 5) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:32:48,386 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 5) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ecd3532
+2019-04-16 21:32:48,390 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 5) Envers integration enabled? : true
+2019-04-16 21:32:48,627 INFO  [io.smallrye.metrics] (MSC service thread 1-3) MicroProfile: Metrics activated
+2019-04-16 21:32:48,640 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-3) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:32:48,958 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."library-client-1.0-SNAPSHOT.war".WeldStartService: org.jboss.msc.service.StartException in service jboss.deployment.unit."library-client-1.0-SNAPSHOT.war".WeldStartService: Failed to start service
+	at org.jboss.msc@1.4.5.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1730)
+	at org.jboss.msc@1.4.5.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1558)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateInjectionPointForDeploymentProblems(Validator.java:378)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateInjectionPoint(Validator.java:290)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateGeneralBean(Validator.java:143)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateRIBean(Validator.java:164)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.Validator.validateBean(Validator.java:526)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.ConcurrentValidator$1.doWork(ConcurrentValidator.java:64)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.bootstrap.ConcurrentValidator$1.doWork(ConcurrentValidator.java:62)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:62)
+	at org.jboss.weld.core@3.1.0.Final//org.jboss.weld.executor.IterativeWorkerTaskFactory$1.call(IterativeWorkerTaskFactory.java:55)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.3.3.Final//org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+2019-04-16 21:32:48,966 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "library-client-1.0-SNAPSHOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"library-client-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+"}}
+2019-04-16 21:32:48,968 ERROR [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0021: Deploy of deployment "library-client-1.0-SNAPSHOT.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"library-client-1.0-SNAPSHOT.war\".WeldStartService" => "Failed to start service
+    Caused by: org.jboss.weld.exceptions.DeploymentException: WELD-001408: Unsatisfied dependencies for type IBookDAO with qualifiers @Default
+  at injection point [BackedAnnotatedParameter] Parameter 1 of [BackedAnnotatedConstructor] @Inject public agh.soa.library.beans.BookBean(IBookDAO)
+  at agh.soa.library.beans.BookBean.<init>(BookBean.java:0)
+"}}
+2019-04-16 21:32:48,977 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:32:48,979 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 24) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:48,982 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 24) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7bc5333
+2019-04-16 21:32:48,987 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 24) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:32:49,238 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment library-client-1.0-SNAPSHOT.war (runtime-name: library-client-1.0-SNAPSHOT.war) in 269ms
+2019-04-16 21:40:35,878 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = dao-impl-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:40:35,880 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 5) WFLYUT0022: Unregistered web context: '/dao-impl-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 21:40:35,909 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:40:35,909 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 77) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@660652c6
+2019-04-16 21:40:35,910 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'dao-impl-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:41:15,725 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.0.Final
+2019-04-16 21:41:17,129 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final
+2019-04-16 21:41:17,152 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+2019-04-16 21:41:17,616 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) starting
+2019-04-16 21:41:17,620 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.separator = \
+	intellij.debug.agent = true
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar
+	java.class.version = 55.0
+	java.home = C:\Program Files\Java\jdk-11.0.2
+	java.io.tmpdir = C:\Users\Millosz\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PDFtk\bin\;C:\cygwin64\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Millosz\AppData\Roaming\cabal\bin;C:\Users\Millosz\AppData\Roaming\local\bin;C:\Users\Millosz\Anaconda3;C:\Users\Millosz\Anaconda3\Scripts;C:\Users\Millosz\Anaconda3\Library\bin;C:\Users\Millosz\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bin;C:\Program Files\erl10.1\bin;C:\mgnat\bin;C:\GNAT\2018\bin;C:\Users\Millosz\AppData\Roaming\npm;C\:ProgramFiles\nodejs;C:\Program Files\Java\jdk-9\bin;C:\Program Files\Java\jdk-11.0.2\bin;;.
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 11.0.2+9-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.java.com/bugreport/
+	java.vendor.version = 18.9
+	java.version = 11.0.2
+	java.version.date = 2019-01-15
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 11.0.2+9-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = C:\wildfly-soa\wildfly-16.0.0.Final
+	jboss.host.name = desktop-j5800lh
+	jboss.modules.dir = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	jboss.modules.system.pkgs = com.intellij.rt
+	jboss.node.name = desktop-j5800lh
+	jboss.qualified.host.name = desktop-j5800lh
+	jboss.server.base.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone
+	jboss.server.config.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log
+	jboss.server.name = desktop-j5800lh
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties
+	module.path = C:\wildfly-soa\wildfly-16.0.0.Final\modules
+	org.jboss.boot.log.file = C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-11.0.2\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\wildfly-soa\wildfly-16.0.0.Final\jboss-modules.jar -mp C:\wildfly-soa\wildfly-16.0.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\wildfly-soa\wildfly-16.0.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = PL
+	user.dir = C:\wildfly-soa\wildfly-16.0.0.Final\bin
+	user.home = C:\Users\Millosz
+	user.language = pl
+	user.name = Millosz
+	user.script = 
+	user.timezone = Europe/Belgrade
+	user.variant = 
+2019-04-16 21:41:17,627 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -Dprogram.name=standalone.bat -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:59761,suspend=y,server=n -javaagent:C:\Users\Millosz\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-modules=java.se -Dorg.jboss.boot.log.file=C:\wildfly-soa\wildfly-16.0.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration/logging.properties 
+2019-04-16 21:41:20,421 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.8.0.Final
+2019-04-16 21:41:22,228 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:41:22,289 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 16) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-16 21:41:22,462 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-04-16 21:41:22,521 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-04-16 21:41:22,543 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-04-16 21:41:22,684 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-16 21:41:22,719 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 58) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2019-04-16 21:41:22,723 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 62) WFLYNAM0001: Activating Naming Subsystem
+2019-04-16 21:41:22,748 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 68) WFLYSEC0002: Activating Security Subsystem
+2019-04-16 21:41:22,755 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 72) WFLYWS0002: Activating WebServices Extension
+2019-04-16 21:41:22,737 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 70) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-16 21:41:22,844 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.3.Final
+2019-04-16 21:41:22,900 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.12.Final)
+2019-04-16 21:41:22,929 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-04-16 21:41:22,934 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 56) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-16 21:41:22,945 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2019-04-16 21:41:23,021 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 59) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2019-04-16 21:41:23,026 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 61) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2019-04-16 21:41:23,120 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.19.Final starting
+2019-04-16 21:41:23,134 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 60) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2019-04-16 21:41:23,238 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-04-16 21:41:23,314 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-16 21:41:23,432 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-16 21:41:23,482 INFO  [io.smallrye.metrics] (MSC service thread 1-5) Converted [2] config entries and added [4] replacements
+2019-04-16 21:41:23,487 INFO  [io.smallrye.metrics] (MSC service thread 1-5) Converted [3] config entries and added [18] replacements
+2019-04-16 21:41:23,462 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-16 21:41:23,499 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:41:23,564 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = postgres
+2019-04-16 21:41:23,846 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0014: Creating file handler for path 'C:\wildfly-soa\wildfly-16.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-16 21:41:23,919 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:41:23,935 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:/PostgresDS]
+2019-04-16 21:41:24,834 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-16 21:41:24,855 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-16 21:41:24,847 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-16 21:41:24,949 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final
+2019-04-16 21:41:24,956 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2019-04-16 21:41:24,970 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-04-16 21:41:25,102 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2019-04-16 21:41:25,259 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-16 21:41:25,460 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore C:\wildfly-soa\wildfly-16.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-16 21:41:25,517 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-soa\wildfly-16.0.0.Final\standalone\deployments
+2019-04-16 21:41:25,609 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-16 21:41:25,779 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2019-04-16 21:41:25,908 WARN  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-3) IJ020020: Connection Properties for DataSource: 'java:/PostgresDS' is empty, try to use driver-class: 'org.postgresql.Driver' and connection-url: 'jdbc:postgresql://localhost:5432/postgres' to connect database
+2019-04-16 21:41:25,921 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-16 21:41:25,930 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:/PostgresDS]
+2019-04-16 21:41:26,117 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.2.4.Final (Apache CXF 3.2.7) 
+2019-04-16 21:41:27,228 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-16 21:41:27,232 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2019-04-16 21:41:27,234 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2019-04-16 21:41:27,235 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 16.0.0.Final (WildFly Core 8.0.0.Final) started in 12282ms - Started 313 of 539 services (325 services are lazy, passive or on-demand)
+2019-04-16 21:41:28,957 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-16 21:41:34,389 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 21:41:34,922 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 26) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:41:34,989 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 26) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:41:35,126 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment library-client-1.0-SNAPSHOT.war
+2019-04-16 21:41:35,299 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 26) HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 21:41:35,325 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 26) HHH000206: hibernate.properties not found
+2019-04-16 21:41:35,576 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 6.0.15.Final
+2019-04-16 21:41:35,925 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 26) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2019-04-16 21:41:36,993 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.8.Final
+2019-04-16 21:41:37,576 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 21:41:37,647 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 3.1.0 (Final)
+2019-04-16 21:41:37,932 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 21:41:38,140 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 26) WFLYCLINF0002: Started client-mappings cache from ejb container
+2019-04-16 21:41:38,404 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 26) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 21:41:38,830 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 26) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:41:39,105 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 26) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:41:39,120 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 26) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72921d8d
+2019-04-16 21:41:39,131 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 26) Envers integration enabled? : true
+2019-04-16 21:41:40,540 INFO  [io.smallrye.metrics] (MSC service thread 1-2) MicroProfile: Metrics activated
+2019-04-16 21:41:40,583 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-2) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 21:41:41,784 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 26) Initializing Mojarra 2.3.9.SP01 for context '/library-client-1.0-SNAPSHOT'
+2019-04-16 21:41:45,921 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 26) Running on PrimeFaces 7.0
+2019-04-16 21:41:46,049 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0021: Registered web context: '/library-client-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 21:41:46,138 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "library-client-1.0-SNAPSHOT.war" (runtime-name : "library-client-1.0-SNAPSHOT.war")
+2019-04-16 21:41:47,550 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:41:47,570 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:41:47,587 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:41:47,588 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72921d8d
+2019-04-16 21:41:47,591 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 21:41:47,605 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 21:41:47,895 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 21:41:47,896 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 21:41:47,941 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 21:41:48,116 INFO  [stdout] (default task-1) 0
+2019-04-16 21:41:48,462 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 0
+2019-04-16 21:41:49,135 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 21:41:49,164 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 21:41:49,192 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 21:41:49,192 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72921d8d
+2019-04-16 21:41:49,195 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2019-04-16 21:41:49,209 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 21:41:49,258 INFO  [stdout] (default task-1) in dao constructor
+2019-04-16 21:41:49,258 INFO  [stdout] (default task-1) henlo from the dao bby
+2019-04-16 21:41:49,259 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 21:41:49,261 INFO  [stdout] (default task-1) 0
+2019-04-16 21:41:49,332 ERROR [org.jboss.as.txn] (default task-1) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 0
+2019-04-16 22:11:53,927 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 22:11:53,943 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0022: Unregistered web context: '/library-client-1.0-SNAPSHOT' from server 'default-server'
+2019-04-16 22:11:53,994 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 22:11:53,995 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 77) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@44f643c2
+2019-04-16 22:11:54,001 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 22:11:55,567 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment library-client-1.0-SNAPSHOT.war (runtime-name: library-client-1.0-SNAPSHOT.war) in 1648ms
+2019-04-16 22:11:55,681 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0009: Undeployed "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-16 22:11:56,348 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-16 22:12:02,308 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for postgres
+2019-04-16 22:12:02,538 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 22:12:02,538 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 77) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 22:12:02,707 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment library-client-1.0-SNAPSHOT.war
+2019-04-16 22:12:03,194 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2019-04-16 22:12:03,243 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-16 22:12:03,296 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-16 22:12:03,296 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 77) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 22:12:03,306 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 77) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 22:12:03,306 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 77) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72921d8d
+2019-04-16 22:12:03,313 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 77) Envers integration enabled? : true
+2019-04-16 22:12:04,065 INFO  [io.smallrye.metrics] (MSC service thread 1-5) MicroProfile: Metrics activated
+2019-04-16 22:12:04,175 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-5) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2019-04-16 22:12:04,588 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 79) Initializing Mojarra 2.3.9.SP01 for context '/library-client-1.0-SNAPSHOT'
+2019-04-16 22:12:06,887 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 79) Running on PrimeFaces 7.0
+2019-04-16 22:12:06,906 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: '/library-client-1.0-SNAPSHOT' for server 'default-server'
+2019-04-16 22:12:06,963 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0010: Deployed "library-client-1.0-SNAPSHOT.war" (runtime-name : "library-client-1.0-SNAPSHOT.war")
+2019-04-16 22:12:17,037 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-2) HHH000204: Processing PersistenceUnitInfo [
+	name: postgres
+	...]
+2019-04-16 22:12:17,051 INFO  [org.hibernate.dialect.Dialect] (default task-2) HHH000400: Using dialect: org.hibernate.dialect.PostgresPlusDialect
+2019-04-16 22:12:17,067 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-2) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-04-16 22:12:17,067 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-2) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@72921d8d
+2019-04-16 22:12:17,072 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-2) Envers integration enabled? : true
+2019-04-16 22:12:17,085 INFO  [org.hibernate.orm.beans] (default task-2) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-04-16 22:12:17,133 INFO  [stdout] (default task-2) in dao constructor
+2019-04-16 22:12:17,134 INFO  [stdout] (default task-2) henlo from the dao bby
+2019-04-16 22:12:17,135 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-2) HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:12:17,137 INFO  [stdout] (default task-2) 0
+2019-04-16 22:12:17,286 ERROR [org.jboss.as.txn] (default task-2) WFLYTX0003: APPLICATION ERROR: transaction still active in request with status 0
