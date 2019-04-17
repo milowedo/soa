@@ -27,5 +27,8 @@ public class Book implements Cloneable, Serializable {
     @Column(name = "year", nullable = false)
     private Integer yearPublished;
 
+    @Basic
+    private boolean borrowed = false;
+
 
 }

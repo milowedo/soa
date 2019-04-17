@@ -3,6 +3,7 @@ package com.agh.soa.daoInterfaces;
 
 
 import com.agh.soa.entity.Book;
+import com.agh.soa.entity.Reader;
 
 import java.io.Serializable;
 import java.util.List;
@@ -22,4 +23,5 @@ public interface IBookDAO extends Serializable {
 
     List getBooks();
 
+    void borrow(Book book, Reader logged);
 }

@@ -13,21 +13,13 @@
             width: 100%;
             box-sizing: border-box;
         }
-        .value {
-            font-weight: bold;
-        }
-
-        .ui-datatable {
-            margin-bottom: 25px
-        }
-
         .ui-datatable .ui-datatable-footer {
             text-align:left;
         }
 
         .ui-datalist ul {
             padding: 0 0 0 10px;
-            margin: 5px 0;
+            margin: 10px 0;
         }
 
         .ui-datatable .ui-button-icon-only .ui-button-text {
@@ -39,11 +31,12 @@
 </h:head>
 
 <h:body>
-    <h:form>
-        <p:commandButton value="Jan Kowalski" id="kowalski" disabled="#{BookBean.logged == 'Jan Kowalski'}"
+
+    <h:form style="margin-bottom: 5px">
+        <p:commandButton value="Jan Kowalski" id="kowalski" disabled="#{BookBean.reader.surname == 'Kowalski'}"
                          action="#{BookBean.kowalski()}" update="kowalski szerego"
                          style="margin-right:20px;" styleClass="ui-priority-primary" />
-        <p:commandButton value="Adam Szerego" id="szerego" disabled="#{BookBean.logged == 'Adam Szerego'}"
+        <p:commandButton value="Adam Szerego" id="szerego" disabled="#{BookBean.reader.surname == 'Szerego'}"
                          action="#{BookBean.szerego()}" update="kowalski szerego"
                          style="margin-right:20px;" styleClass="ui-priority-primary" />
     </h:form>
@@ -100,34 +93,80 @@
                  </p:cellEditor>
              </p:column>
 
-             <!--DELETE BUTTON-->
-             <p:column headerText="delete " style="width: 8%">
-                 <h:commandButton action="#{BookBean.delete(book.id)}"
-                                  value="delete"
-                                  style="text-align: center"/>
-             </p:column>
-
              <!--EDIT MODE-->
              <p:column headerText="modify" style="width: 10%">
                  <p:rowEditor />
              </p:column>
 
+             <!--DELETE BUTTON-->
+             <p:column headerText="delete " style="width: 10%">
+                 <h:commandButton action="#{BookBean.deleteBook(book.id)}"
+                                  value="delete"
+                                  update=":form" ajax = "true"
+                                  style="text-align: center"/>
+             </p:column>
+
              <!--BORROW-->
              <p:column headerText="borrow" style="width: 10%" >
-                 <h:commandButton action="#{BookBean.borrow(book.id)}"
-                                  value="borrow"
+                 <h:commandButton action="#{BookBean.borrowBook(book)}"
+                                  value="borrow" disabled="#{book.borrowed}"
+                                  update=":form" ajax = "true"
                                   style="text-align: center"/>
+             </p:column>
+
+             <!--RETURN-->
+             <p:column headerText="return" style="width: 10%" >
+                 <h:commandButton action="#{BookBean.returnBook(book)}"
+                         value="return" disabled="#{!book.borrowed}"
+                         update=":form" ajax = "true"
+                         style="text-align: center"/>
              </p:column>
 
         </p:dataTable>
 
         <div class="ui-g">
             <div class="ui-g-12">
-                <p:commandButton value="Add new book" styleClass="ui-priority-primary"
+                <p:commandButton value="Add book to library" style="margin-bottom: : 30px" styleClass="ui-priority-primary"
                                  process="@this" update=":form"
                                  action="#{BookBean.newBook()}" />
             </div>
         </div>
+    </h:form>
+
+    <!-- HERE STARTS THE LOANS TABLE -->
+    <h:form style="text-align: center; margin-top: 30px" id="loans_form">
+        <p:dataTable value="#{BookBean.loans}"
+                     widgetVar="loansTable"
+                     border="1"
+                     id="loans_table"
+                     var="loan"
+                     editable="true"
+                     emptyMessage="No loans found">
+
+            <!--HEADER-->
+            <f:facet name="header" >
+                <br/>loans history<br/><br/>
+            </f:facet>
+
+            <!--COLUMNS START HERE-->
+            <p:column headerText="reader" style="width: 14%">
+                    <f:facet name="output"><h:outputText value="#{loan.reader.name} #{loan.reader.surname}}"/></f:facet>
+            </p:column>
+
+            <p:column headerText="book"  style="width: 14%">
+                    <f:facet name="output"><h:outputText value="#{loan.book.title}" /></f:facet>
+            </p:column>
+
+            <p:column headerText="borrowed" >
+                    <f:facet name="output"><h:outputText value="#{loan.loanDate}" /></f:facet>
+            </p:column>
+
+            <p:column headerText="returned"  style="width: 14%">
+                    <f:facet name="output"><h:outputText value="#{loan.returnDate}" /></f:facet>
+            </p:column>
+
+        </p:dataTable>
+
 
     </h:form>
 </h:body>

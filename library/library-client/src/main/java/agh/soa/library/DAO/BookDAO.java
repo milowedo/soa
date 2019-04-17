@@ -2,6 +2,8 @@ package agh.soa.library.DAO;
 
 import com.agh.soa.daoInterfaces.IBookDAO;
 import com.agh.soa.entity.Book;
+import com.agh.soa.entity.Loan;
+import com.agh.soa.entity.Reader;
 
 
 import javax.annotation.PostConstruct;
@@ -26,7 +28,7 @@ public class BookDAO implements IBookDAO {
             Query q = em.createQuery("from Book", Book.class);
             return q.getResultList();
         } catch (Exception e) {
-        System.err.println("Database is empty" + e);
+            System.err.println("Database is empty" + e);
         }finally {
             em.flush();
             em.clear();
@@ -39,21 +41,21 @@ public class BookDAO implements IBookDAO {
     }
 
     public void saveNewBook(Book b) {
-        em.getTransaction().begin();
-        int authorId;
-        try {
-            String jpql = "SELECT id FROM Author WHERE surname = :surname";
-            authorId = em.createQuery(jpql, Integer.class)
-                    .setParameter("surname", b.getAuthor().getSurname())
-                    .getSingleResult();
-            b.getAuthor().setId(authorId);
-        }catch (Throwable e){
-            em.persist(b.getAuthor());
-        }finally {
-            em.persist(b);
-            em.getTransaction().commit();
+    em.getTransaction().begin();
+    int authorId;
+    try {
+        String jpql = "SELECT id FROM Author WHERE surname = :surname";
+        authorId = em.createQuery(jpql, Integer.class)
+                .setParameter("surname", b.getAuthor().getSurname())
+                .getSingleResult();
+        b.getAuthor().setId(authorId);
+    }catch (Throwable e){
+        em.persist(b.getAuthor());
+    }finally {
+        em.persist(b);
+        em.getTransaction().commit();
 
-        }
+    }
     }
 
     public void update(int id, Book book) {
@@ -70,6 +72,13 @@ public class BookDAO implements IBookDAO {
 
     public List getBooks() {
         return books;
+    }
+
+    @Override
+    public void borrow(Book book, Reader logged) {
+        Loan loan = new Loan();
+        loan.setBook(book);
+
     }
 
 }

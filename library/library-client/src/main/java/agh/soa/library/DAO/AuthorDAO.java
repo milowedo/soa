@@ -2,10 +2,11 @@ package agh.soa.library.DAO;
 
 import com.agh.soa.daoInterfaces.IAuthorDAO;
 import com.agh.soa.entity.Author;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.Optional;
+import java.util.List;
 
 public class AuthorDAO implements IAuthorDAO {
 
@@ -13,29 +14,19 @@ public class AuthorDAO implements IAuthorDAO {
     private EntityManager em = factory.createEntityManager();
 
     @Override
-    public Optional<Author> getAuthorById(int id) {
-        return Optional.ofNullable(em.find(Author.class, id));
-    }
-
-    @Override
-    public void saveNewAuthor(Author b) {
+    public void addAuthor(Author author) {
         em.getTransaction().begin();
-        em.persist(b);
+        em.persist(author);
         em.getTransaction().commit();
     }
 
     @Override
-    public void updateExistingAuthor(int id, Author book) {
-        em.getTransaction().begin();
-        getAuthorById(id).ifPresent(old -> em.merge(book));
-        em.getTransaction().commit();
+    public Author getAuthorById(int id) {
+        return null;
     }
 
     @Override
-    public void deleteAuthor(int id) {
-        em.getTransaction().begin();
-        getAuthorById(id).ifPresent(em::remove);
-        em.getTransaction().commit();
+    public List getAllAuthors() {
+        return null;
     }
-
 }

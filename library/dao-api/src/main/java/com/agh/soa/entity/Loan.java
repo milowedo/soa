@@ -27,10 +27,10 @@ public class Loan {
     @Temporal(TemporalType.DATE)
     private Date returnDate;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     private Book book;
 
-    @ManyToOne
+    @OneToOne(cascade = CascadeType.MERGE)
     private Reader reader;
 
 }
