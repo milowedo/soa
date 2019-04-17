@@ -1,17 +1,21 @@
 package com.agh.soa.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
+import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name="authors")
 public class Author {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Basic
@@ -20,12 +24,8 @@ public class Author {
     @Basic
     private String surname;
 
-    @Basic
-    private String nationality;
-
     @OneToMany(mappedBy = "author")
     private List<Book> works;
-
 
     public void addWork(Book book) {
         if(works == null){

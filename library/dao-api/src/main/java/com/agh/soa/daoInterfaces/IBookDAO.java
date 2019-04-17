@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface IBookDAO extends Serializable {
 
-    List<Book> getAll();
+    List getAll();
 
     Optional<Book> getOne(int id);
 
@@ -20,6 +20,6 @@ public interface IBookDAO extends Serializable {
 
     void delete(int id);
 
-    List<Book> getBooks();
+    List getBooks();
 
 }

@@ -2,9 +2,9 @@ package agh.soa.library.beans;
 
 
 import com.agh.soa.daoInterfaces.IBookDAO;
+import com.agh.soa.entity.Author;
 import com.agh.soa.entity.Book;
 import org.primefaces.event.RowEditEvent;
-
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -19,12 +19,35 @@ public class BookBean implements Serializable {
    private IBookDAO bookDAO;
    private List<Book> books;
 
+    private String logged;
+    public void szerego() {
+        this.logged = "Adam Szerego";
+    }
+    public void kowalski() {
+        this.logged = "Jan Kowalski";
+    }
+
+    public String getLogged() {
+        return logged;
+    }
 
    @Inject
     public BookBean(IBookDAO bookDAO) {
         this.bookDAO = bookDAO;
         this.books = this.bookDAO.getBooks();
     }
+
+
+
+
+
+
+
+
+
+    //
+    //CRUD related methods
+    //
 
    public void onRowEdit(RowEditEvent event) {
        int editedBookID = (((Book) event.getObject()).getId());
@@ -44,7 +67,7 @@ public class BookBean implements Serializable {
       try {
          bookDAO.saveNewBook(book);
       } catch (Exception e) {
-         System.err.print("Book with such ISBN or title already exists!");
+         System.err.print("Book with such title already exists!");
       }
    }
 
@@ -60,8 +83,12 @@ public class BookBean implements Serializable {
 
    public void newBook() {
        Book newBook = new Book();
+       Author author = new Author();
+       newBook.setAuthor(author);
        this.books.add(newBook);
    }
+
+
 
 
    //

@@ -13,21 +13,17 @@ public class BookDAO implements IBookDAO {
     private EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgres");
     private EntityManager em = factory.createEntityManager();
 
-    private List<Book> books;
+    private List books;
 
     @PostConstruct
     private void init(){
         books = this.getAll();
     }
 
-    public BookDAO(){ }
-
-    public List<Book> getAll() {
+    public List getAll() {
         em.getTransaction().begin();
         try {
-            Query bc = em.createQuery("From Book where price = 3");
-            System.out.println(bc.getFirstResult());
-            Query q = em.createQuery("FROM Book", Book.class);
+            Query q = em.createQuery("from Book", Book.class);
             return q.getResultList();
         } catch (Exception e) {
         System.err.println("Database is empty" + e);
@@ -44,8 +40,20 @@ public class BookDAO implements IBookDAO {
 
     public void saveNewBook(Book b) {
         em.getTransaction().begin();
-        em.persist(b);
-        em.getTransaction().commit();
+        int authorId;
+        try {
+            String jpql = "SELECT id FROM Author WHERE surname = :surname";
+            authorId = em.createQuery(jpql, Integer.class)
+                    .setParameter("surname", b.getAuthor().getSurname())
+                    .getSingleResult();
+            b.getAuthor().setId(authorId);
+        }catch (Throwable e){
+            em.persist(b.getAuthor());
+        }finally {
+            em.persist(b);
+            em.getTransaction().commit();
+
+        }
     }
 
     public void update(int id, Book book) {
@@ -60,7 +68,7 @@ public class BookDAO implements IBookDAO {
         em.getTransaction().commit();
     }
 
-    public List<Book> getBooks() {
+    public List getBooks() {
         return books;
     }
 

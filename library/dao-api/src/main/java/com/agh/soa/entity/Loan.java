@@ -1,20 +1,26 @@
 package com.agh.soa.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name="loans")
 public class Loan {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue
     private int id;
 
     @Basic
+    @Temporal(TemporalType.DATE)
     private Date loanDate;
 
     @Basic

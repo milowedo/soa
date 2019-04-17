@@ -39,6 +39,16 @@
 </h:head>
 
 <h:body>
+    <h:form>
+        <p:commandButton value="Jan Kowalski" id="kowalski" disabled="#{BookBean.logged == 'Jan Kowalski'}"
+                         action="#{BookBean.kowalski()}" update="kowalski szerego"
+                         style="margin-right:20px;" styleClass="ui-priority-primary" />
+        <p:commandButton value="Adam Szerego" id="szerego" disabled="#{BookBean.logged == 'Adam Szerego'}"
+                         action="#{BookBean.szerego()}" update="kowalski szerego"
+                         style="margin-right:20px;" styleClass="ui-priority-primary" />
+    </h:form>
+
+
     <h:form style="text-align: center" id="form">
          <p:dataTable value="#{BookBean.books}"
                       widgetVar="booksTable"
@@ -61,17 +71,17 @@
              <p:ajax event="rowEdit" listener="#{BookBean.onRowEdit}" />
 
              <!--COLUMNS START HERE-->
-             <p:column headerText="surname" filterMatchMode="contains"  sortBy="#{book.author_surname}" style="width: 14%">
+             <p:column headerText="surname" filterMatchMode="contains"  sortBy="#{book.author.surname}" style="width: 14%">
                  <p:cellEditor>
-                     <f:facet name="output"><h:outputText value="#{book.author_surname}" /></f:facet>
-                     <f:facet name="input"><p:inputText  value="#{book.author_surname}" style="width:100%" label="surname"/></f:facet>
+                     <f:facet name="output"><h:outputText value="#{book.author.surname}" /></f:facet>
+                     <f:facet name="input"><p:inputText  value="#{book.author.surname}" style="width:100%" label="surname"/></f:facet>
                  </p:cellEditor>
              </p:column>
 
-             <p:column headerText="name" filterMatchMode="contains" sortBy="#{book.author_name}" style="width: 14%">
+             <p:column headerText="name" filterMatchMode="contains" sortBy="#{book.author.name}" style="width: 14%">
                  <p:cellEditor>
-                     <f:facet name="output"><h:outputText value="#{book.author_name}" /></f:facet>
-                     <f:facet name="input"><p:inputText  value="#{book.author_name}" style="width:100%" label="name"/></f:facet>
+                     <f:facet name="output"><h:outputText value="#{book.author.name}" /></f:facet>
+                     <f:facet name="input"><p:inputText  value="#{book.author.name}" style="width:100%" label="name"/></f:facet>
                  </p:cellEditor>
              </p:column>
 
@@ -82,39 +92,33 @@
                  </p:cellEditor>
              </p:column>
 
-             <p:column headerText="ISBN" style="width: 18%">
-                 <p:cellEditor>
-                     <f:facet name="output"><h:outputText value="#{book.ISBN}" /></f:facet>
-                     <f:facet name="input"><p:inputText value="#{book.ISBN}" style="width:100%" label="ISBN"/></f:facet>
-                 </p:cellEditor>
-             </p:column>
 
-             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 12%">
+             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 14%">
                  <p:cellEditor>
                      <f:facet name="output"><h:outputText value="#{book.yearPublished}" /></f:facet>
                      <f:facet name="input"><p:inputText value="#{book.yearPublished}" style="width:100%" label="year"/></f:facet>
                  </p:cellEditor>
              </p:column>
 
-             <p:column headerText="price" filterMatchMode="contains" sortBy="#{book.price}" style="width: 8%">
-                 <p:cellEditor>
-                     <f:facet name="output"><h:outputText style="text-align: center" value="#{book.price}" /></f:facet>
-                     <f:facet name="input"><p:inputText value="#{book.price}" style="width:100%" label="price"/></f:facet>
-                 </p:cellEditor>
-
-             </p:column>
-
              <!--DELETE BUTTON-->
-             <p:column style="width: 10%">
+             <p:column headerText="delete " style="width: 8%">
                  <h:commandButton action="#{BookBean.delete(book.id)}"
                                   value="delete"
                                   style="text-align: center"/>
              </p:column>
 
              <!--EDIT MODE-->
-             <p:column style="width:35px">
+             <p:column headerText="modify" style="width: 10%">
                  <p:rowEditor />
              </p:column>
+
+             <!--BORROW-->
+             <p:column headerText="borrow" style="width: 10%" >
+                 <h:commandButton action="#{BookBean.borrow(book.id)}"
+                                  value="borrow"
+                                  style="text-align: center"/>
+             </p:column>
+
         </p:dataTable>
 
         <div class="ui-g">
