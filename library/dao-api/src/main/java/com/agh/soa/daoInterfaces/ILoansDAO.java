@@ -12,4 +12,5 @@ public interface ILoansDAO extends Serializable {
     void addLoan(Loan loan);
     List getLoans();
     void updateLoan(Loan loan);
+    void refreshData();
 }

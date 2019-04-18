@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import java.util.Iterator;
 import java.util.List;
 
 public class LoanDAO implements ILoansDAO {
@@ -43,6 +44,11 @@ public class LoanDAO implements ILoansDAO {
         em.getTransaction().begin();
         em.merge(loan);
         em.getTransaction().commit();
+    }
+
+    @Override
+    public void refreshData() {
+        loans = this.getAll();
     }
 
     @Override

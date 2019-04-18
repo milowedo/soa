@@ -24,13 +24,4 @@ public class Author {
     @Basic
     private String surname;
 
-    @OneToMany(mappedBy = "author")
-    private List<Book> works;
-
-    public void addWork(Book book) {
-        if(works == null){
-            works = new ArrayList<>();
-        }
-        works.add(book);
-    }
 }

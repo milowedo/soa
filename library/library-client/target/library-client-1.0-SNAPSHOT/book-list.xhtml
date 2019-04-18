@@ -110,7 +110,7 @@
              <p:column headerText="borrow" style="width: 10%" >
                  <h:commandButton action="#{BookBean.borrowBook(book)}"
                                   value="borrow" disabled="#{book.borrowed}"
-                                  update=":form" ajax = "true"
+                                  update=":form :loans_form" process="@this"
                                   style="text-align: center"/>
              </p:column>
 
@@ -118,15 +118,16 @@
              <p:column headerText="return" style="width: 10%" >
                  <h:commandButton action="#{BookBean.returnBook(book)}"
                          value="return" disabled="#{!book.borrowed}"
-                         update=":form" ajax = "true"
+                         update=":form :loans_form" process="@this"
                          style="text-align: center"/>
              </p:column>
 
         </p:dataTable>
 
+        <!-- add new book -->
         <div class="ui-g">
             <div class="ui-g-12">
-                <p:commandButton value="Add book to library" style="margin-bottom: : 30px" styleClass="ui-priority-primary"
+                <p:commandButton value="Add book to library" style="margin-bottom : 30px" styleClass="ui-priority-primary"
                                  process="@this" update=":form"
                                  action="#{BookBean.newBook()}" />
             </div>
@@ -138,7 +139,7 @@
         <p:dataTable value="#{BookBean.loans}"
                      widgetVar="loansTable"
                      border="1"
-                     id="loans_table"
+                     id="loans"
                      var="loan"
                      editable="true"
                      emptyMessage="No loans found">
@@ -149,25 +150,43 @@
             </f:facet>
 
             <!--COLUMNS START HERE-->
-            <p:column headerText="reader" style="width: 14%">
-                    <f:facet name="output"><h:outputText value="#{loan.reader.name} #{loan.reader.surname}}"/></f:facet>
+            <p:column headerText="reader" style="width: 35%">
+                    <h:outputText value="#{loan.reader.name} #{loan.reader.surname}"/>
             </p:column>
 
-            <p:column headerText="book"  style="width: 14%">
-                    <f:facet name="output"><h:outputText value="#{loan.book.title}" /></f:facet>
+            <p:column headerText="book"  style="width: 25%">
+                    <h:outputText value="#{loan.book.title}" />
             </p:column>
 
-            <p:column headerText="borrowed" >
-                    <f:facet name="output"><h:outputText value="#{loan.loanDate}" /></f:facet>
+            <p:column headerText="borrowed" style="width: 20%">
+                    <h:outputText value="#{loan.loanDate}" />
             </p:column>
 
-            <p:column headerText="returned"  style="width: 14%">
-                    <f:facet name="output"><h:outputText value="#{loan.returnDate}" /></f:facet>
+            <p:column headerText="returned"  style="width: 20%">
+                    <h:outputText value="#{loan.returnDate}" />
             </p:column>
 
         </p:dataTable>
 
-
     </h:form>
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <p:commandButton value="zadanie 1" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                             action="#{BookBean.zadanie1()}" />
+        </div>
+    </div>
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <p:commandButton value="zadanie 2" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                             action="#{BookBean.zadanie2()}" />
+        </div>
+    </div>
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <p:commandButton value="zadanie 3" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                             action="#{BookBean.zadanie3()}" />
+        </div>
+    </div>
 </h:body>
 </html>
