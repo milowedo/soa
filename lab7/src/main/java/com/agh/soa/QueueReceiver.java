@@ -6,9 +6,10 @@ import javax.jms.JMSContext;
 import javax.jms.Queue;
 
 public class QueueReceiver {
+
     @Inject
     private JMSContext context;
-    @Resource(mappedName = "java:jboss/jms/queue/SOA_Test")
+    @Resource(mappedName = "java:jboss/exported/jms/topic/SOA_Test")
     Queue myQueue;
     public String receiveMessage() {
         String message = context.createConsumer(myQueue).receiveBody(String.class);
