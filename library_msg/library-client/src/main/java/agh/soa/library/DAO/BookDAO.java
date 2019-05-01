@@ -1,5 +1,6 @@
 package agh.soa.library.DAO;
 
+import agh.soa.library.beans.ConfirmationQueue;
 import com.agh.soa.daoInterfaces.IBookDAO;
 import com.agh.soa.entity.Book;
 import com.agh.soa.entity.Loan;
@@ -7,6 +8,7 @@ import com.agh.soa.entity.Reader;
 
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.persistence.*;
 import java.util.*;
 
@@ -16,6 +18,9 @@ public class BookDAO implements IBookDAO {
     private EntityManager em = factory.createEntityManager();
 
     private List books;
+
+    @Inject
+    private ConfirmationQueue confirmationQueue;
 
     @PostConstruct
     private void init(){
@@ -44,8 +49,8 @@ public class BookDAO implements IBookDAO {
     em.getTransaction().begin();
     int authorId;
     try {
-        String jpql = "SELECT id FROM Author WHERE surname = :surname";
-        authorId = em.createQuery(jpql, Integer.class)
+        String authorQuery = "SELECT id FROM Author WHERE surname = :surname";
+        authorId = em.createQuery(authorQuery, Integer.class)
                 .setParameter("surname", b.getAuthor().getSurname())
                 .getSingleResult();
         b.getAuthor().setId(authorId);
@@ -54,7 +59,7 @@ public class BookDAO implements IBookDAO {
     }finally {
         em.persist(b);
         em.getTransaction().commit();
-
+        confirmationQueue.sendMessage(b.getTitle() +" saved.");
     }
     }
 
@@ -62,12 +67,15 @@ public class BookDAO implements IBookDAO {
         em.getTransaction().begin();
         getOne(id).ifPresent(old -> em.merge(book));
         em.getTransaction().commit();
+        confirmationQueue.sendMessage(book.getTitle() + " changed.");
     }
 
-    public void delete(int id) {
+    public void delete(int id, String title) {
         em.getTransaction().begin();
         getOne(id).ifPresent(em::remove);
         em.getTransaction().commit();
+        confirmationQueue.sendMessage(title+ " deleted.");
+
     }
 
     public List getBooks() {
@@ -75,9 +83,11 @@ public class BookDAO implements IBookDAO {
     }
 
     @Override
-    public void borrow(Book book, Reader logged) {
-        Loan loan = new Loan();
-        loan.setBook(book);
+    public void borrow(int id, Book book) {
+        this.update(id, book);
+        if(book.isBorrowed()){
+            confirmationQueue.sendMessage(book.getTitle()+ " borrowed.");
+        }else confirmationQueue.sendMessage(book.getTitle()+ " returned.");
 
     }
 

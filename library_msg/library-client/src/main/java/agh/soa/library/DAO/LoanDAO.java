@@ -1,15 +1,16 @@
 package agh.soa.library.DAO;
 
+import agh.soa.library.beans.ConfirmationQueue;
 import com.agh.soa.daoInterfaces.ILoansDAO;
 import com.agh.soa.entity.Book;
 import com.agh.soa.entity.Loan;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import java.util.Iterator;
 import java.util.List;
 
 public class LoanDAO implements ILoansDAO {

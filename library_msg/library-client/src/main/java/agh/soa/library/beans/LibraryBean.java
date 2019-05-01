@@ -6,7 +6,6 @@ import com.agh.soa.entity.*;
 import org.primefaces.event.RowEditEvent;
 
 import javax.annotation.PostConstruct;
-import javax.el.MethodExpression;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -29,7 +28,10 @@ public class LibraryBean implements Serializable {
    private Reader reader;
 
    @Inject
-    public LibraryBean(IBookDAO bookDAO, ILoansDAO loansDAO, IReaderDAO readerDAO, IAuthorDAO authorDAO) {
+    public LibraryBean(IBookDAO bookDAO,
+                       ILoansDAO loansDAO,
+                       IReaderDAO readerDAO,
+                       IAuthorDAO authorDAO) {
         this.bookDAO = bookDAO;
         this.loansDAO = loansDAO;
         this.readerDAO = readerDAO;
@@ -44,7 +46,10 @@ public class LibraryBean implements Serializable {
 
 
     public void userLogin(long index){
-        this.reader = readerDAO.getReaderByID(index);
+       this.reader = readerDAO.getReaderByID(index);
+    }
+    public void userLogout() {
+        this.reader = null;
     }
     public Reader getReader() {
         return reader;
@@ -53,19 +58,17 @@ public class LibraryBean implements Serializable {
     public void borrowBook(Book book){
         book.setBorrowed(true);
         Loan loan = new Loan(new java.sql.Date(System.currentTimeMillis()), book, this.reader);
-
         loansDAO.addLoan(loan);
+        bookDAO.borrow(book.getId(), book);
         loans.add(loan);
-        bookDAO.update(book.getId(), book);
-        bookDAO.borrow(book, reader);
     }
+
     public void returnBook(Book book){
         book.setBorrowed(false);
         Loan loan = loansDAO.getLoanByBookID(book);
         loan.setReturnDate(new java.sql.Date(System.currentTimeMillis()));
         loansDAO.updateLoan(loan);
-        bookDAO.update(book.getId(), book);
-        bookDAO.borrow(book, reader);
+        bookDAO.borrow(book.getId(), book);
         for(Loan el : loans){
             if(el.getBook().equals(loan.getBook())
                     && el.getReader().equals(loan.getReader())
@@ -97,17 +100,19 @@ public class LibraryBean implements Serializable {
       try {
          bookDAO.saveNewBook(book);
       } catch (Exception e) {
-         System.err.print("Book with such title already exists!");
+         System.err.print("Such book already exists!");
       }
    }
    public void deleteBook(int bookId) {
+       String bookTitle = null;
        for(Book book : books){
            if(book.getId() == bookId) {
+               bookTitle = book.getTitle();
                books.remove(book);
                break;
            }
        }
-       bookDAO.delete(bookId);
+       bookDAO.delete(bookId, bookTitle);
    }
    public void newBook() {
        Book newBook = new Book();
@@ -132,7 +137,7 @@ public class LibraryBean implements Serializable {
    }
 
     //
-    // loans related
+    //loans getter
     //
     public List<Loan> getLoans() {
         return loans;
@@ -151,9 +156,5 @@ public class LibraryBean implements Serializable {
 
     public List zadanie3(){
         return authorDAO.getAuthorsByReader(this.reader);
-    }
-
-    public void userLogout() {
-       this.reader = null;
     }
 }

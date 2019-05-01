@@ -91,10 +91,10 @@
              </p:column>
 
 
-             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 10%">
+             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 75px">
                  <p:cellEditor>
                      <f:facet name="output"><h:outputText value="#{book.yearPublished}" /></f:facet>
-                     <f:facet name="input"><p:inputText value="#{book.yearPublished}" style="width:100%" label="year"/></f:facet>
+                     <f:facet name="input"><p:inputText value="#{book.yearPublished} " style="width:100%" label="year"/></f:facet>
                  </p:cellEditor>
              </p:column>
 
