@@ -15,13 +15,13 @@
             <artifactId>jboss-jms-api_2.0_spec</artifactId>
             <version>1.0.0.Final</version>
         </dependency>
-
         <dependency>
             <groupId>org.wildfly</groupId>
             <artifactId>wildfly-jms-client-bom</artifactId>
             <version>10.1.0.Final</version>
             <type>pom</type>
         </dependency>
+        
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>

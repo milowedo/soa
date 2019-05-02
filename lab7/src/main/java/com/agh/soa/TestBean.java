@@ -10,6 +10,9 @@ public class TestBean implements Serializable {
    @Inject
    QueueSender sender;
 
+   @Inject
+   QueueReceiver receiver;
+
     public String getTitle() {
         return title;
     }
@@ -17,7 +20,10 @@ public class TestBean implements Serializable {
     private String title = "Queue";
 
     public void testMethod(){
-        System.out.println("in bean, sending message");
-        sender.sendMessage("Henlo");
+        receiver.subscribe();
+        String msg = "Hello from the topic side";
+        System.out.println("in TestBean, sending message \"" +msg+"\"");
+        sender.sendMessage(msg);
+        receiver.receiveMessage();
     }
 }
