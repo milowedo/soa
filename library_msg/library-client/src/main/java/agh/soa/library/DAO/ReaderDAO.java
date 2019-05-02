@@ -1,13 +1,14 @@
 package agh.soa.library.DAO;
 
+import agh.soa.library.beans.ConfirmationQueueProducer;
 import com.agh.soa.daoInterfaces.IReaderDAO;
 import com.agh.soa.entity.Reader;
 
+import javax.inject.Inject;
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -15,6 +16,9 @@ public class ReaderDAO implements IReaderDAO {
 
     private EntityManagerFactory factory = Persistence.createEntityManagerFactory("postgres");
     private EntityManager em = factory.createEntityManager();
+
+    @Inject
+    private ConfirmationQueueProducer confirmationQueueProducer;
 
     @Override
     public void addReader(Reader reader) {
@@ -33,7 +37,9 @@ public class ReaderDAO implements IReaderDAO {
             query.select(hh)
                     .where(cb.equal(hh.get("id"), id));
             TypedQuery<Reader> tq = em.createQuery(query);
-            return tq.getSingleResult();
+            Reader r = tq.getSingleResult();
+            //confirmationQueueProducer.sendMessage(r.getName(), r.getName()+r.getSurname());
+            return r;
         }
 //        try {
 //            String jpql = "FROM Reader WHERE id = :id";

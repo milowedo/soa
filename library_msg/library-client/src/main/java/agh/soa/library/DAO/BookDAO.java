@@ -1,10 +1,8 @@
 package agh.soa.library.DAO;
 
-import agh.soa.library.beans.ConfirmationQueue;
+import agh.soa.library.beans.ConfirmationQueueProducer;
 import com.agh.soa.daoInterfaces.IBookDAO;
 import com.agh.soa.entity.Book;
-import com.agh.soa.entity.Loan;
-import com.agh.soa.entity.Reader;
 
 
 import javax.annotation.PostConstruct;
@@ -20,7 +18,7 @@ public class BookDAO implements IBookDAO {
     private List books;
 
     @Inject
-    private ConfirmationQueue confirmationQueue;
+    private ConfirmationQueueProducer confirmationQueueProducer;
 
     @PostConstruct
     private void init(){
@@ -45,7 +43,7 @@ public class BookDAO implements IBookDAO {
         return Optional.ofNullable(em.find(Book.class, id));
     }
 
-    public void saveNewBook(Book b) {
+    public void saveNewBook(Book b, String user) {
     em.getTransaction().begin();
     int authorId;
     try {
@@ -59,7 +57,7 @@ public class BookDAO implements IBookDAO {
     }finally {
         em.persist(b);
         em.getTransaction().commit();
-        confirmationQueue.sendMessage(b.getTitle() +" saved.");
+        confirmationQueueProducer.sendMessage("\""+b.getTitle() +"\" added.",user);
     }
     }
 
@@ -67,14 +65,13 @@ public class BookDAO implements IBookDAO {
         em.getTransaction().begin();
         getOne(id).ifPresent(old -> em.merge(book));
         em.getTransaction().commit();
-        confirmationQueue.sendMessage(book.getTitle() + " changed.");
     }
 
-    public void delete(int id, String title) {
+    public void delete(int id, String title, String user) {
         em.getTransaction().begin();
         getOne(id).ifPresent(em::remove);
         em.getTransaction().commit();
-        confirmationQueue.sendMessage(title+ " deleted.");
+        confirmationQueueProducer.sendMessage("\""+title+ "\" deleted.", user);
 
     }
 
@@ -83,11 +80,11 @@ public class BookDAO implements IBookDAO {
     }
 
     @Override
-    public void borrow(int id, Book book) {
+    public void borrow(int id, Book book, String user) {
         this.update(id, book);
         if(book.isBorrowed()){
-            confirmationQueue.sendMessage(book.getTitle()+ " borrowed.");
-        }else confirmationQueue.sendMessage(book.getTitle()+ " returned.");
+            confirmationQueueProducer.sendMessage("\""+book.getTitle()+ "\" borrowed.", user);
+        }else confirmationQueueProducer.sendMessage("\""+book.getTitle()+ "\" returned.", user);
 
     }
 

@@ -31,18 +31,27 @@
         <p:commandButton value="Jan Kowalski" id="kowalski"
                          rendered="#{BookBean.reader == null || BookBean.reader.surname == 'Kowalski'}"
                          disabled="#{BookBean.reader != null || BookBean.reader.surname == 'Szerego'}"
-                         action="#{BookBean.userLogin(1)}" update="login booksForm"
+                         action="#{BookBean.userLogin(1)}" update="login booksForm :msg"
                          style="margin-right:20px;" styleClass="ui-priority-primary" />
 
         <p:commandButton value="Adam Szerego" id="szerego"
                          rendered="#{BookBean.reader == null || BookBean.reader.surname == 'Szerego'}"
                          disabled="#{BookBean.reader != null || BookBean.reader.surname == 'Kowalski'}"
-                         action="#{BookBean.userLogin(2)}" update="login booksForm"
+                         action="#{BookBean.userLogin(2)}" update="login booksForm
+                         msg"
                          style="margin-right:20px;" styleClass="ui-priority-primary" />
         <p:commandButton value="Logout" id="logout"
                          rendered="#{BookBean.reader != null}"
-                         action="#{BookBean.userLogout()}" update="login booksForm"
+                         action="#{BookBean.userLogout()}" update="login booksForm msg"
                          style="margin-right:20px; float: right" styleClass="ui-priority-primary" />
+    </h:form>
+
+    <h:form id="msg" style="float: right; margin-top: 5px"  >
+        <p:growl id="messages" showDetail="true" closable="true">
+            <p:autoUpdate />
+        </p:growl>
+        <p:commandButton id="back" value="click to check updates" rendered="#{BookBean.reader != null}"
+                         action="#{confirmationQueueConsumer.getMessage(BookBean.reader)}"/>
     </h:form>
 
 
@@ -91,39 +100,39 @@
              </p:column>
 
 
-             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 75px">
+             <p:column headerText="published" filterMatchMode="contains" sortBy="#{book.yearPublished}" style="width: 80px">
                  <p:cellEditor>
                      <f:facet name="output"><h:outputText value="#{book.yearPublished}" /></f:facet>
-                     <f:facet name="input"><p:inputText value="#{book.yearPublished} " style="width:100%" label="year"/></f:facet>
+                     <f:facet name="input"><p:inputText value="#{book.yearPublished}" style="width:100%" label="year"/></f:facet>
                  </p:cellEditor>
              </p:column>
 
              <!--EDIT MODE-->
-             <p:column headerText="modify" style="width: 65px">
-                 <p:rowEditor />
+             <p:column headerText="modify" style="width: 65px" rendered="#{BookBean.reader != null}">
+                 <p:rowEditor/>
              </p:column>
 
              <!--DELETE BUTTON-->
-             <p:column headerText="delete" style="width: 65px">
-                 <p:commandButton action="#{BookBean.deleteBook(book.id)}"
-                                  value="x"
-                                  type="button"
-                                  update=":booksForm"
-                                  style="text-align: center; background-color: crimson">
-                 </p:commandButton>
-             </p:column>
+<!--             <p:column headerText="delete" style="width: 65px">-->
+<!--                 <p:commandButton action="#{BookBean.deleteBook(book.id)}"-->
+<!--                                  value="x"-->
+<!--                                  type="button"-->
+<!--                                  update=":booksForm"-->
+<!--                                  style="text-align: center; background-color: crimson">-->
+<!--                 </p:commandButton>-->
+<!--             </p:column>-->
 
 
              <!--BORROW-->
-             <p:column headerText="borrow"  id = "borrowButton" style="width: 65px">
+             <p:column headerText="borrow"  id = "borrowButton" style="width: 65px" rendered="#{BookBean.reader != null}">
                  <p:commandButton actionListener="#{BookBean.borrowBook(book)}"
-                                  value="b" disabled="#{BookBean.reader == null || book.borrowed}"
+                                  value="b" disabled="#{book.borrowed}"
                                   update=":booksForm :loans_form"
                                   style="text-align: center; background-color: gold"/>
              </p:column>
 
              <!--RETURN-->
-             <p:column headerText="return"  style="width: 65px">
+             <p:column headerText="return"  style="width: 65px" rendered="#{BookBean.reader != null}">
                  <p:commandButton actionListener="#{BookBean.returnBook(book)}"
                          value="r" disabled="#{!book.borrowed}"
                          update=":booksForm :loans_form"
@@ -136,6 +145,7 @@
         <div class="ui-g">
             <div class="ui-g-12">
                 <p:commandButton value="Add book to library" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                                 rendered="#{BookBean.reader != null}"
                                  process="@this" update=":booksForm"
                                  action="#{BookBean.newBook()}" />
             </div>

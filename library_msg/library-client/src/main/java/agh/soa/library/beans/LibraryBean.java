@@ -7,6 +7,7 @@ import org.primefaces.event.RowEditEvent;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
@@ -47,9 +48,11 @@ public class LibraryBean implements Serializable {
 
     public void userLogin(long index){
        this.reader = readerDAO.getReaderByID(index);
+       FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("user", this.reader);
     }
     public void userLogout() {
         this.reader = null;
+        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
     }
     public Reader getReader() {
         return reader;
@@ -59,7 +62,7 @@ public class LibraryBean implements Serializable {
         book.setBorrowed(true);
         Loan loan = new Loan(new java.sql.Date(System.currentTimeMillis()), book, this.reader);
         loansDAO.addLoan(loan);
-        bookDAO.borrow(book.getId(), book);
+        bookDAO.borrow(book.getId(), book,reader.getName()+reader.getSurname());
         loans.add(loan);
     }
 
@@ -68,7 +71,7 @@ public class LibraryBean implements Serializable {
         Loan loan = loansDAO.getLoanByBookID(book);
         loan.setReturnDate(new java.sql.Date(System.currentTimeMillis()));
         loansDAO.updateLoan(loan);
-        bookDAO.borrow(book.getId(), book);
+        bookDAO.borrow(book.getId(), book, reader.getName()+reader.getSurname());
         for(Loan el : loans){
             if(el.getBook().equals(loan.getBook())
                     && el.getReader().equals(loan.getReader())
@@ -98,7 +101,7 @@ public class LibraryBean implements Serializable {
    }
    private void saveNewBook(Book book) {
       try {
-         bookDAO.saveNewBook(book);
+         bookDAO.saveNewBook(book, reader.getName()+reader.getSurname());
       } catch (Exception e) {
          System.err.print("Such book already exists!");
       }
@@ -112,7 +115,7 @@ public class LibraryBean implements Serializable {
                break;
            }
        }
-       bookDAO.delete(bookId, bookTitle);
+       bookDAO.delete(bookId, bookTitle,reader.getName()+reader.getSurname());
    }
    public void newBook() {
        Book newBook = new Book();
