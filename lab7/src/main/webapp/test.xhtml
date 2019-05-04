@@ -10,13 +10,27 @@
 </h:head>
 
 <h:body>
+    <h:outputText value="Czytajcie sysoutowe logi jakco, tam są otrzymywane rzeczy"/>
+    <br/>
 
-    <h:outputText value="#{TestBean.title}"/>
+    <h:outputText value="#{QueueTestBean.title}"/>
     <h:form>
         <div class="ui-g">
             <div class="ui-g-12">
-                <p:commandButton value="send msg" style="margin-bottom : 30px" styleClass="ui-priority-primary"
-                                 action="#{TestBean.testMethod()}" />
+                <p:commandButton value="send q msg" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                                 action="#{QueueTestBean.testMethod()}" />
+                <p:commandButton value="receive q msg" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                                 action="#{queueReceiver.receiveMessage()}" />
+            </div>
+        </div>
+    </h:form>
+
+    <h:outputText value="#{TopicTestBean.title}"/>
+    <h:form>
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <p:commandButton value="send t msg" style="margin-bottom : 30px" styleClass="ui-priority-primary"
+                                 action="#{TopicTestBean.testMethod()}" />
             </div>
         </div>
     </h:form>

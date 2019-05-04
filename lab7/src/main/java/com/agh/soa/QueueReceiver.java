@@ -1,34 +1,33 @@
 package com.agh.soa;
 
 import javax.annotation.Resource;
+import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
-import javax.jms.JMSConsumer;
+import javax.inject.Named;
 import javax.jms.JMSContext;
-import javax.jms.Topic;
+import javax.jms.Queue;
 
+@Named(value = "queueReceiver")
+@Dependent
 public class QueueReceiver {
     @Inject
     private JMSContext context;
-    @Resource(mappedName = "java:jboss/exported/jms/topic/SOA_Test")
-    Topic topic;
-
-    private JMSConsumer consumer;
-
-
-
-    public void subscribe() {
-        this.consumer = this.
-                context.
-                createConsumer(topic);
-    }
+    @Resource(mappedName = "java:jboss/exported/jms/queue/SOA_test")
+    Queue myQueue;
 
     public void receiveMessage() {
+        String message = null;
         try {
-            System.out.println("QUEUE RECEIVER: got \"" + this.consumer.receiveBody(String.class)+"\"");
-
-        } catch (Exception e) {
-            e.printStackTrace();
+            message = context.createConsumer(myQueue).receiveBody(String.class);
+        }catch (Exception exc){
+            exc.printStackTrace();
         }
+        if(message == null) {
+            message = "queue empty";
+        }
+
+        System.out.println("QUEUE RECEIVER: got \"" + message +"\"");
+
 
     }
 }

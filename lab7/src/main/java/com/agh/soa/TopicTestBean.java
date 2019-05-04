@@ -4,25 +4,25 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 
-@Named("TestBean")
-public class TestBean implements Serializable {
+@Named("TopicTestBean")
+public class TopicTestBean implements Serializable {
 
    @Inject
-   QueueSender sender;
+   TopicSender sender;
 
    @Inject
-   QueueReceiver receiver;
+   TopicReceiver receiver;
 
     public String getTitle() {
         return title;
     }
 
-    private String title = "Queue";
+    private String title = "Topic(received automatically)";
 
     public void testMethod(){
         receiver.subscribe();
         String msg = "Hello from the topic side";
-        System.out.println("in TestBean, sending message \"" +msg+"\"");
+        System.out.println("in TopicTestBean, sending message \"" +msg+"\"");
         sender.sendMessage(msg);
         receiver.receiveMessage();
     }
