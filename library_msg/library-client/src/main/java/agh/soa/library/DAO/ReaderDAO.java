@@ -1,6 +1,6 @@
 package agh.soa.library.DAO;
 
-import agh.soa.library.beans.ConfirmationQueueProducer;
+import agh.soa.library.beans.AvailabilityTopicPublisher;
 import com.agh.soa.daoInterfaces.IReaderDAO;
 import com.agh.soa.entity.Reader;
 
@@ -18,7 +18,7 @@ public class ReaderDAO implements IReaderDAO {
     private EntityManager em = factory.createEntityManager();
 
     @Inject
-    private ConfirmationQueueProducer confirmationQueueProducer;
+    private AvailabilityTopicPublisher availabilityTopicPublisher;
 
     @Override
     public void addReader(Reader reader) {
@@ -38,7 +38,7 @@ public class ReaderDAO implements IReaderDAO {
                     .where(cb.equal(hh.get("id"), id));
             TypedQuery<Reader> tq = em.createQuery(query);
             Reader r = tq.getSingleResult();
-            //confirmationQueueProducer.sendMessage(r.getName(), r.getName()+r.getSurname());
+            availabilityTopicPublisher.sendMessageBookAvailable("book available:)");
             return r;
         }
 //        try {

@@ -27,22 +27,30 @@ public class LibraryBean implements Serializable {
    private List<Book> books;
    private List<Loan> loans;
    private Reader reader;
+   private AvailabilityTopicConsumer consumer;
 
    @Inject
     public LibraryBean(IBookDAO bookDAO,
                        ILoansDAO loansDAO,
                        IReaderDAO readerDAO,
-                       IAuthorDAO authorDAO) {
+                       IAuthorDAO authorDAO,
+                       AvailabilityTopicConsumer consumer) {
         this.bookDAO = bookDAO;
         this.loansDAO = loansDAO;
         this.readerDAO = readerDAO;
         this.authorDAO = authorDAO;
+        this.consumer = consumer;
     }
 
     @PostConstruct
     public void initializeData(){
         this.books = this.bookDAO.getBooks();
         this.loans = this.loansDAO.getLoans();
+        consumer.subscribe();
+    }
+
+    public void receiveTopicMessage(){
+       this.consumer.receiveMessage();
     }
 
 

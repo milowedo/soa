@@ -1,0 +1,18 @@
+2019-04-19 09:25:58,555 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = library-client-1.0-SNAPSHOT.war_org.postgresql.Driver_42_2
+2019-04-19 09:25:58,586 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 298) WFLYUT0022: Unregistered web context: '/library-client-1.0-SNAPSHOT' from server 'default-server'
+2019-04-19 09:25:58,836 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 305) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-19 09:25:58,852 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 305) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@61f83ed5
+2019-04-19 09:25:58,852 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 305) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'library-client-1.0-SNAPSHOT.war#postgres'
+2019-04-19 09:25:59,695 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment library-client-1.0-SNAPSHOT.war (runtime-name: library-client-1.0-SNAPSHOT.war) in 1177ms
+2019-04-19 09:25:59,773 INFO  [org.jboss.as.server] (management-handler-thread - 17) WFLYSRV0009: Undeployed "library-client-1.0-SNAPSHOT.war" (runtime-name: "library-client-1.0-SNAPSHOT.war")
+2019-04-19 09:25:59,883 INFO  [org.jboss.as.server] (management-handler-thread - 17) WFLYSRV0272: Suspending server
+2019-04-19 09:25:59,914 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-04-19 09:25:59,914 INFO  [org.jboss.as.ejb3] (management-handler-thread - 17) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-19 09:25:59,992 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:/PostgresDS]
+2019-04-19 09:26:00,008 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2019-04-19 09:26:00,023 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-19 09:26:00,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2019-04-19 09:26:00,100 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-19 09:26:00,100 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = postgres
+2019-04-19 09:26:00,100 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-19 09:26:00,116 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443

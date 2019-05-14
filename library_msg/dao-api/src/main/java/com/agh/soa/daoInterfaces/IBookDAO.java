@@ -15,13 +15,13 @@ public interface IBookDAO extends Serializable {
 
     Optional<Book> getOne(int id);
 
-    void saveNewBook(Book b);
+    void saveNewBook(Book b, String user);
 
     void update(int id, Book book);
 
-    void delete(int id);
+    void delete(int id, String title, String user);
 
     List getBooks();
 
-    void borrow(Book book, Reader logged);
+    void borrow(int id, Book book, String user);
 }

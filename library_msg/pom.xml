@@ -11,6 +11,7 @@
     <modules>
         <module>dao-api</module>
         <module>library-client</module>
+        <module>dao-impl</module>
     </modules>
 
 

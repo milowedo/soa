@@ -54,6 +54,8 @@
                          action="#{confirmationQueueConsumer.getMessage(BookBean.reader)}"/>
     </h:form>
 
+    <p:commandButton value="topic" action="#{BookBean.receiveTopicMessage()}"/>
+
 
     <h:form style="text-align: center" id="booksForm">
         <p:growl id="message" showDetail="true" />

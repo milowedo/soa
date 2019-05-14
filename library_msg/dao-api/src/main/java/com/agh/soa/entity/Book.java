@@ -1,14 +1,14 @@
 package com.agh.soa.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="books")
@@ -38,7 +38,7 @@ public class Book implements Cloneable, Serializable {
     private String title;
 
     @Column(name = "year", nullable = false)
-    private Integer yearPublished;
+    private Long yearPublished;
 
     @Basic
     private boolean borrowed = false;
